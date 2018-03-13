@@ -1,0 +1,61 @@
+@media screen and (max-width: 1320px){
+/*登录/注册*/
+.w1200{width: 1000px;}
+.swim{display: none;}
+.mainHeader .logo{margin-right: 20px;}
+.classify_nav{width: 200px;}
+.sn-right{width: 800px;}
+
+/*线路详情*/
+.tour_summary .tour_image{width: 404px;overflow: hidden;}
+.tour_summary .vd_tour{width: 540px;}
+.tour_image .scene_img_navs .tnavsbar{width: 355px;}
+.vd_summary .price_calendar,#calendar-area .ui-calendar .calmonth,#calendar-area .ui-calendar{width: 390px;}
+.calendar-tab{width: 84px;}
+.calendar-tabs-prev,.calendar-tabs-next{width: 22px;}
+.calendar-tabs-next.disabled {background-position: -43px -50px;}
+.tick-f{width: 180px;height: 150px;}
+.wom_info td input{width: 180px;}
+.appendTab .time div{width: 108px;}
+.appendTab .time input{width: 98px;}
+.vd_summary .price_section{width: 540px;}
+.reserve-t input{width: 156px;}
+.reserve-t button{width: 40px;}
+.reserve-t input[type="tel"]{width: 110px;}
+/*首页*/
+#focus .pre{left: 390px;}
+#focus .next{right: 70px;}
+.area .tab_box .dest li{width: 46%;}
+.holiday-block li.cur{width: 310px;}
+.offer-list li{width: 233px;}
+.topic-list li,.featured .raider li{width: 184px;}
+.servies24 ul li{margin-right: 20px;width: 146px;}
+.abouts{width: 450px;}
+/*产品列表*/
+.DateSelect .J_calendar{width: 108px;}
+.tickets{width: 70%;}
+.relatedtour{width: 25%;}
+.tick-item .item-right-wrap{width:70%;}
+/*订单详情*/
+.visainfo{width: 68%;}
+/*个人中心*/
+.infos-de{width: 420px;}
+.infos-de dl{width: 200px;}
+/*攻略列表*/
+.tour-item{width: 324px;}
+/*门票详细*/
+.tour_summary .tour_summary_img{width: 405px;}
+.tour_summary .info-visa{width: 55%;}
+.pro_img{width: 80%;}
+/*专题页*/
+#park{
+	height: 500px;
+}
+.park-tab .offer-list li{width:300px;}
+.travel img{width: 408px;}
+.explain{width: 500px;}
+.park-tab .tab_menu{
+	left: -70px;
+}
+
+}

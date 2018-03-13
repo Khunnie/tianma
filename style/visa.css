@@ -1,0 +1,1416 @@
+/*签证预定*/
+.visa-banner li{
+	width:31.3%;
+	float: left;
+	background: #e5e5e5;
+	height: 44px;
+	line-height: 44px; 
+	text-align: center;
+	position: relative;
+	margin-right:20px;
+	color: #323232;
+}
+.visa-banner{
+	margin-right: -20px;
+	padding: 26px 0 23px 0;
+	overflow: hidden;
+}
+.visa-banner li:after,.visa-banner li:before{
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.visa-banner li:before{
+	border-left:16px solid #e5e5e5;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	right:-16px;
+}
+.visa-banner li:after{
+	border-left:16px solid transparent;
+	border-top: 22px solid #e5e5e5;
+	border-bottom: 22px solid #e5e5e5;
+	left:-16px;
+}
+.visa-banner .current{
+	background: #36bbe8;
+	color: #fff;
+}
+.visa-banner .current:before{
+	border-left:16px solid #36bbe8;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	right:-16px;
+}
+.visa-banner .current:after{
+	border-left:16px solid transparent;
+	border-top: 22px solid #36bbe8;
+	border-bottom: 22px solid #36bbe8;
+	left:-16px;
+}
+.visainfo{
+	border: 1px solid #ddd;
+	background: #fff;
+	width: 69%;
+	min-height: 608px;
+}
+.visa-img{
+	padding-bottom: 25px;
+	height:145px;
+	border-bottom: 1px solid #dedede;
+	background: #fff;
+}
+.visa-img img{
+	width: 218px;
+	height: 145px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.info li{
+	line-height: 30px;
+	color: #666;
+	position: relative;
+}
+.Price{
+	font-size: 24px;
+	color: #ff6138;
+	height: 100%;
+	line-height: 145px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.Price span{
+	font-size: 16px;
+}
+.write{
+	padding: 25px;
+}
+.info-txt{
+	font-size: 18px;
+	color:#272b34;
+	width: 100%;
+}
+.write h5{
+	width: 50px;
+	height: 100%;
+	line-height: 46px;
+}
+.write dt,.write dd{
+	float: left;
+	line-height: 46px;
+	margin-right: 10px;
+}
+.write dd{margin-right: 0;}
+.hotel dl{
+	float: left;
+	width: 85%;
+	padding-left: 50px;
+}
+.write dl:nth-of-type(1){
+	padding-left: 0;
+}
+.write .info-btn{
+	width:114px;
+	height: 24px; 
+	border: 1px solid #d7e1e2;
+	background: #fff;
+	margin-top: 10px;
+}
+.tiplook{
+	width: 100%;
+	text-indent: 50px;
+	color: #848484;
+}
+.write select{
+	width: 100px;
+	height: 26px;
+	border: 1px solid #d7e1e2;
+}
+.message .mess{
+	width:551px ;
+	height: 107px;
+	resize: none;
+	padding:10px;
+	line-height: 30px;
+}
+.info-list{
+	margin-bottom: 83px;
+	padding-bottom: 40px;
+}
+.reserve{
+	width: 21%;
+	min-height: 608px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+.ico,.ico-money{
+	width: 24px;
+	height: 24px;
+	background: url(../images/ico.png);
+	display: inline-block;
+	margin-top: 10px;
+}
+.must{
+	font-size: 16px;
+	color: #323232;
+}
+.must span{
+	font-size: 12px;
+	color: #666;
+}
+.reserve-t {
+	padding-bottom: 60px;
+	border-bottom: 1px dashed #D7E1E2;
+}
+.reserve-t i,.select_body dt i{
+	color: #ff6138;
+	margin-right: 5px;
+}
+.reserve-t dl{width: 100%; float: left;}
+.reserve-t input{
+	width: 186px;
+	height: 30px;
+	border: 1px solid #d7e1e2;
+	background: #fff;
+	margin-top: 5px;
+}
+.reserve-t button{
+	width: 48px;
+	height: 34px;
+	border: 1px solid #d7e1e2;
+	background: #fff;
+}
+.reserve-t input[type="tel"]{
+	width: 134px;
+	text-indent: 10px;
+}
+.ico-money{
+	background-position: 0 -26px;
+	margin-top: 0;
+	margin-right: 10px;
+}
+.reserve-b h4{
+	line-height: 60px;
+}
+.reserve-b h3{
+	font-size: 18px;
+	line-height: 50px;
+}
+.total{
+	line-height: 70px;
+	font-size: 12px;
+	color: #333;
+}
+.total span,.list span{
+	color: #e86e1d;
+	font-size: 20px;
+}
+.totalBtn{
+	outline: none;
+	width: 140px;
+	height: 36px;
+	background: #f08300;
+	color:#fff;
+	border:  1px solid #f0f0f0;
+}
+/*签证详细*/
+
+.infor{
+	margin-bottom: 49px;
+}
+.tour_summary_img{
+	width: 505px;
+	height: 307px;
+	margin-right: 30px;
+}
+.tour_summary_img .image{
+	width: 100%;
+	height: 100%;
+	
+}
+.info-visa .info li{
+	width: 100%;
+	line-height:44px;
+	height:44px;
+}
+.info-visa .info p{
+	position: relative;
+}
+.info-visa .info p,.info-visa .info span,.info-visa .info .numSelect{
+	float: left;height: 40px;line-height: 40px;
+	
+}
+.info-visa .info li>span{
+	margin-right: 8px;
+	width: 67px;
+	text-align:right;
+}
+b.ico-select{
+	display: block;
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #a2a4a6;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+}
+b.active{
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.info-visa .info .numSelect{
+	position: relative;
+}
+.lei-box{
+	background: #fff;
+	width: 294px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	z-index: 5;
+	height: 0;
+	overflow: hidden;
+	border-top: none!important;
+}
+.lei-box>div{
+	width: auto;
+	line-height: 20px;
+	height: 20px;
+	padding: 15px 10px 15px 15px;
+}
+.peopleNum{
+	display: inline-block;
+	float: left;
+}
+.lei-box div em{
+	color:#2aa3ce;
+	margin-left: 9px;
+}
+.lei-box div .agetype{
+	width: 48px;
+	height: 16px;
+	border: 1px solid #ddd;
+	text-align: center;
+	float: left;
+}
+.lei-box div .jsq a{
+	border: 1px solid #ddd;
+	width: 18px;
+	display: inline-block;
+	height: 18px;
+	text-align: center;
+	float: left;
+}
+.lei-box div .jsq a:hover{
+	color: #f50;
+}
+.lei-box a.sure{
+	display: block;
+    margin: 0 10px 10px 10px;
+    border: 1px solid #f50;
+    text-align: center;
+    padding: 10px 0;
+    color: #f50;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0;
+}
+.fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #fff;
+}
+.cost{
+	color: #ff6138;
+}
+.cost i{
+	font-size: 22px;
+	
+}
+.info .Intab{
+	width: 294px;
+	height: 31px;
+	border: 1px solid #d1d1d1;
+	color: #666;
+	text-indent: 14px;
+	margin-top:5px;
+}
+.once{
+	width: 137px;
+	height: 42px;
+	background: #ff6138;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+	border-radius: 25px;
+	margin-top: 17px;
+	outline: none;
+	display: inline-block;
+}
+.once:hover{
+	background: #f8ac00;
+	color: #fff;
+}
+.nav-list{
+	margin-bottom: 49px;
+	border-bottom: 1px solid #eee;
+	padding:20px 0px;
+	z-index: 2;
+}
+.nav-list a{
+	padding: 0 25px;
+	display: inline-block;
+	border-right: 1px solid #ccc;
+}
+.nav-list .current{
+	color: #2bb9eb;
+}
+.visa-tit{
+	font-size: 22px;
+	color: #161616;
+	padding-left: 22px;
+	border-left: 5px solid #ffba13;
+	margin-top: 18px;
+}
+#Product .appli-info{padding-right: 0;}
+.appli-info{
+	padding-right: 30%;
+	line-height: 24px;
+	padding-left: 26px;
+}
+.appli-name{
+	font-size: 16px;
+	color: #323232;
+	margin-top: 26px;
+}
+.appli-name i,.cpList i{
+	width: 7px;
+	height: 7px;
+	background: #8a0a55;
+	border-radius: 50%;
+	margin-right: 14px;
+}
+.appli-info p{
+	color: #666;
+}
+.pr{
+	padding-left: 26px;
+	color: #666;
+}
+.nav-menu{
+	margin-top: 66px;
+}
+.nav-menu li{
+	padding: 0 53px;
+	color: #343434;
+	float: left;
+	background: #e9e9e9;
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #e9e9e9;
+	border-bottom-color:#1f9fcd;
+}
+.nav-menu li a{
+	width: 100%;
+	height:100%;
+	display: inline-block;
+}
+.nav-menu .current{
+	background: #fff;
+	border: 1px solid #1f9fcd;
+	border-bottom: none;
+	
+}
+#reques-list>div{
+	min-height: 250px;
+	margin-top: 22px;
+}
+.data li{
+	line-height: 30px;
+	margin-top: 14px;
+}
+.data h4{
+	font-size: 18px;
+	color: #343434;
+}
+.data p{
+	font-size: 14px;
+	color: #646464;
+	padding-left:55px;
+}
+.data h4 i{
+	font-size:24px;
+	color: #2bb9eb;
+	padding: 0 21px;
+	display: inline-block;
+}
+.reserve-txt{
+	margin-top: 36px;
+	padding-bottom: 98px;
+}
+#costs .pr{
+	margin-top: 20px;
+	color: #666;
+}
+#costs h4{
+	font-size: 18px;
+}
+.leave{
+	margin-top:30px;
+	overflow: hidden;
+	line-height: 27px;
+}
+.leave img{
+	width: 52px;
+	height: 52px;
+	padding: 0 11px;
+	border-radius: 50%;
+}
+.leave .leave-msg{
+	width: 90%;
+}
+.leave .detail_icon_time{
+	position:inherit;
+}
+.leave p{
+	font-size:12px ;
+	color: #6f6f6f;
+}
+.the_name{
+	color: #7ab864;
+	padding-right: 5px;
+}
+.leave time{
+	color: #6d6d6d;
+}
+.stat{
+	text-align: right;
+	line-height: 30px;
+	height: 30px;
+	border-bottom: 1px solid #f0f0f0;
+	color: #999;
+	padding-right: 31px;
+}
+#btn-msg{
+	padding-right: 31px;
+	margin-bottom: 27px;
+}
+#btn-msg label{
+	color: #666;
+}
+#btn-msg textarea{
+	width:100% ;
+	height: 84px;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 15px;
+	resize: none;
+}
+#btn-msg .code{
+	width: 66px;
+	height: 36px;
+	border: 1px solid #e8e8e8;
+}
+#btn-msg .code_img{
+	width:80px;
+	height: 25px;
+	margin-right: 5px;
+}
+#btn-msg .btn-submit{
+	width: 152px;
+	height: 42px;
+	border: 1px solid #2bb9eb;
+	background: #fff;
+	color: #2bb9eb;
+	border-radius: 25px;
+	outline: none;
+}
+#btn-msg .btn-submit:hover{
+	background: #2bb9eb;
+	color: #fff;
+}
+.page_indx a{
+	width: 77px;
+	height: 30px;
+	border: 1px solid #eee;
+	color: #ddd;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+}
+.page_indx span{
+	padding: 0 21px;
+}
+.nav-border{
+	padding-bottom: 71px;
+	border-bottom: 1px solid #d1d1d1;
+}
+/*签证列表*/
+.sea-nav .fico.ficog{
+	background-position: -100px -196px;
+}
+.sea-nav .fico.ficoq{
+	background-position: -100px -222px;
+}
+.sort .blur b{color: #2bb9eb;}
+.tick-item .visa-left{
+	width: 135px;
+	height: 150px;
+	padding: 30px 17px;
+}
+.tick-item .visa-right{
+	margin-left: 168px;
+	padding: 30px 20px 20px ;
+}
+.tick-item .visa-left img {
+    width: 135px;
+    height:97px;
+    border-radius: 5px;
+}
+.tick-item .visa-left a{
+	display: inline-block;
+	width: 135px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 16px;
+	margin-top: 16px;
+	border-radius: 5px;
+}
+.visaList .tick-item{
+	height: 210px;
+}
+.tick-item .visa-right .item-right-wrap{
+	width: 100%;
+}
+.tick-item .visa-right .item-right-wrap .disc{
+	padding-right: 25%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	min-height: 40px;
+}
+.tick-item .visa-right .item-right-wrap .disc:after{
+	content: "...";
+}
+.tick-item .visa-right .price{
+	top: 150px;
+}
+.tick-item .visa-left .ly{
+	border: 1px solid #2bb9eb;
+	color: #2bb9eb;
+}
+.tick-item .visa-left .tf{
+	border: 1px solid #d89300;
+	color: #d89300;
+}
+.tick-item .visa-left .sw{
+	border: 1px solid #58a772;
+	color: #58a772;
+}
+.flow_list{
+	padding: 23px 0;
+	
+}
+.flow{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+}
+.flow_list span{
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	border: 1px solid #cce9f3;
+	float: left;
+	background: url(../images/car.png);
+	margin-right: 19px;
+}
+.flow_list p{
+	float: left;
+	line-height: 40px;
+	color: #666;
+	cursor: pointer;
+}
+.flow_list p:hover{
+	color: #67b9d6;
+}
+.flow_list .ys{
+	background-position: 0 -48px;
+}
+.flow_list .zl{
+	background-position: 0 -98px;
+}
+.flow_list .sh{
+	background-position: 0 -156px;
+}
+.flow_list .bl{
+	background-position: -51px 0px;
+}
+.dotted{
+	height: 30px;
+	width:0px;
+	border-left:1px solid #f3f3f3 ;
+	margin-left: 20px;
+}
+/*门票预定*/
+.item-tick{
+	width: 73%;
+}
+.bg{
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 23px;
+}
+.item-tick .visa_img{
+	padding-bottom: 0;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 35px;
+}
+.tick-txt{
+	color: #515660;
+	height: 22px;
+	padding: 20px 0 0 20px;
+}
+.icoNum{
+	width: 20px;
+	height: 20px;
+	background: #f2a114;
+	color: #fff;
+	display: inline-block;
+	border-radius:10px;
+	text-align: center;
+	line-height: 20px;
+}
+.tick-f{
+	width: 224px;
+	margin:0 15px;
+}
+.tick-f img{
+	width: 100%;
+	height:100%;
+	margin-right: 0;
+}
+.price_section{width: 70%;}
+.dateM .Intab{
+	width: 239px;
+}
+.tick-r .info-txt{
+	font-size: 14px;
+}
+.tickP{
+	position: absolute;
+	right:46px;
+	top: 80px;
+	color: #ff6138;
+	font-weight: bold;
+	font-size: 24px;
+}
+.tickP span{
+	font-weight: normal;
+}
+.tick-info{
+	padding-bottom: 44px;
+}
+.wom_info{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+.wom_info td{
+	border: 1px solid #e3e3e3;
+}
+.wom_info th{
+	background: #eee;
+	height: 40px;
+	color: #666;
+}
+.wom_info th i{
+	display: inline-block;
+	background: url(../images/ico.png);
+	width: 14px;
+	margin-right: 9px;
+	margin-bottom: 4px;
+	vertical-align: text-bottom;
+}
+.wom_info th .cr{
+	height: 16px;
+	background-position: 0 -84px;
+	
+}
+.wom_info th .sl{
+	height: 14px;
+	background-position: 0 -60px;
+}
+.wom_info .tl{
+	font-weight: bold;
+	font-size: 16px;
+	text-indent: 19px;
+}
+.wom_info .tr{
+	font-size: 12px;
+	padding-right: 25px;
+}
+.wom_info td{
+	height:86px;
+}
+.wom_info td label{
+	display: inline-block;
+	font-size: 14px;
+	padding-left: 35px;
+	line-height: 22px;
+	color: #a9a9a9;
+}
+.wom_info td input,.wom_info dl input{
+	width: 220px;
+	height: 34px;
+	border: 1px solid #adadad;
+	border-radius: 5px;
+	margin-left: 30px;
+	text-indent: 12px;
+}
+.wom_info dl input{
+	margin-left: 0;
+}
+.select_head{
+	border-bottom: 1px solid #adadad;
+	width: 97%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.select_head .active{
+	background:#666;
+	color: #eee;
+}
+.select_body li{
+	width: 97%;
+	margin: 0 auto;
+	overflow: hidden;
+	display: none;
+}
+.select_body li .info-user{
+	width: 50%;
+	float: left;
+	padding: 10px 0;
+	background:#ebebeb;
+}
+
+.select_head span{
+	display: inline-block;
+	margin-right: 5px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #adadad;
+	color: #666;
+	padding: 0 20px;
+	border-bottom-color:#adadad;
+	border-radius: 10px 10px 0 0;
+	cursor: pointer;
+}
+
+.bz{
+	width: 97%;
+	height: 107px;
+	resize: none;
+	margin-left:14px;
+}
+.zf{
+	width: 215px;
+	height: 45px;
+	background: #ec7250;
+	color: #fff;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.zf a{
+	color: #fff;
+}
+.zf:hover{
+	background: #f65414;
+}
+.zf_Tip{
+	font-size: 12px;
+	line-height: 24px;
+	margin-right: 20px;
+}
+.zf_Tip p{
+	color: #8c8c8c;
+}
+.zf_Tip p:nth-of-type(2){
+	color: #db826a;
+}
+.tick_b h3{
+	font-size: 14px;
+	line-height: 20px;
+}
+.tick_b time{
+	color: #a9a9a9;
+	height: 27px;
+	line-height: 27px;
+	display: inline-block;
+}
+.tick_b .list{
+	color: #333;
+	line-height: 35px;
+}
+.tick_b .total span,.tick_b .list span{
+	font-size: 16px;
+	font-weight: bold;
+}
+/*门票详细*/
+.info-visa .select_O li{
+	line-height: 55px;
+	height: 55px;
+}
+.product_list{
+	margin-left: 25px;
+}
+.product_list h3{
+	font-size: 25px;
+	line-height: 44px;
+	margin-top: 15px;
+}
+.product_list .bold{
+	font-weight: bold;
+	color: #323232;
+}
+.pro_img{
+	width: 1056px;
+	height: 695px;
+	margin: 15px 0;
+}
+.recomm_img{
+	width: 626px;
+	height: 410px;
+	margin: 15px 0;
+}
+.change h4{
+	line-height: 33px;
+	font-size: 20px;
+	color: #141414;
+	padding-left:26px;
+	margin-top: 25px;
+}
+.change p{
+	color: #666;
+	line-height: 30px;
+	padding-left:26px;
+}
+.map{
+	width: 596px;
+	height: 403px;
+	margin-bottom: 30px;
+}
+.book_li h4{
+	font-size: 18px;
+	margin-top: 22px;
+}
+/*攻略详细*/
+.trave-page{
+	margin-bottom: 43px;
+}
+.strategy{
+	background: #fff;
+	padding: 0 35px 33px 50px;
+}
+.trave-txt .traveL{
+	width: 77%;
+}
+.trave-txt .traveR{
+	width:23%;
+}
+.tit{
+	width: 100%;
+	height: 94px;
+	line-height: 94px;
+	font-size: 28px;
+	border-bottom: 1px solid #dedede;
+	font-weight: bold;
+}
+.nums{
+	height: 50px;
+	line-height: 50px;
+	color: #888;
+	font-size: 12px;
+}
+.preface p{
+	line-height: 27px;
+	color: #73777a;
+}
+.preface h4{
+	font-weight: bold;
+	color: #323232;
+	font-size: 22px;
+	height: 82px;
+	line-height: 82px;
+}
+.How,.content h4{
+	font-size: 18px;
+	font-weight: bold;
+	height: 34px;
+	line-height: 34px;
+}
+
+.content img{
+	width: 680px;
+	height: 457px;
+	margin-top: 12px;
+	margin-bottom: 40px;
+}
+.content p{
+	line-height: 30px;
+}
+.content a{
+	color: #ff6f69;
+}
+.Like{
+	margin-top: 54px;
+	padding-left: 26px;
+	height: 24px;
+}
+
+.Like i{
+	width: 25px;
+	display: inline-block;
+	background: url(../images/ico.png);
+	margin-right: 10px;
+}
+.Like .sc{
+	height: 24px;
+	background-position: -31px 0;
+}
+.Like .fx{
+	height: 22px;
+	background-position: -31px -28px;
+}
+.trave_list{
+	margin-top: 36px;
+	padding-left: 26px;
+}
+.trave_list h4{
+	height: 50px;
+	line-height: 50px;
+	color:#1a252b;
+}
+.trave_list ul li{
+	line-height: 34px;
+	padding-left: 34px;
+	position: relative;
+	cursor: pointer;
+	
+}
+.trave_list ul li i{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url(../images/ico.png);
+	background-position: -31px -59px;
+	position: absolute;
+	left: 0;
+	top:8px;
+}
+/*产品预定*/
+.select{
+	position: relative;
+}
+.select select{
+	width: 100%;
+	height: 100%;
+	color: #666;
+	  -webkit-appearance: none; /*for chrome*/
+	 border: 0;
+	 text-indent: 15px;
+}
+.select i{
+	position: absolute;
+	right: 5px;
+	top: 15px;
+	width: 7px;
+	height: 4px;
+	background: url(../images/row-list-sj.png);
+}
+.appendTab{
+	margin:35px 18px;
+	
+}
+.appendTab td{
+	height: 35px;
+	line-height: 24px;
+	color: #666;
+	font-size: 12px;
+}
+.appendTab .f16{
+	font-size: 16px;
+}
+.appendTab .grey{
+	border: 1px solid #d1d1d1;
+	background: #eeeeee;
+}
+.appendTab .to{
+	color:#fa9944;
+	font-size: 12px;
+}
+.appendTab .combo{
+	width: 129px;
+	height: 26px;
+	border: 1px solid #aaa;
+}
+
+.appendTab .time input{
+	width: 118px;
+    height: 26px;
+    border: none;
+    background: none;
+}
+.appendTab .time div{
+	border: 1px solid #d1d1d1;
+	background: #fff;
+    border-radius: 4px;
+    width: 116px;
+    height: 24px;
+    vertical-align: middle;
+    text-indent: 6px;
+    color: #181818;
+    display: inline-block;
+    position: relative;
+}
+.appendTab .time{
+	padding-left: 10px;
+}
+.appendTab .part{
+	color: #ff5500;
+}
+
+.appendTab .copy{
+	width: 41px;
+	height: 25px;
+	border: 1px solid #d1d1d1;
+	text-indent: 6px;
+}
+.appendTab .txtNum{
+	position: relative;
+	padding-left:22px;
+}
+.txtNum input{
+	position: absolute;
+	left: 2px;
+	top: 8px;
+}
+/*产品详细*/
+.cpList{
+	margin-top: 26px;
+	overflow: hidden;
+}
+.cpList li{
+	line-height: 24px;
+	width: 33.3%;
+	float: left;
+	color: #666;
+}
+.cost-txt h4{
+	color: #212121;
+	line-height: 40px;
+	height: 40px;
+}
+.cost-txt i{
+	width: 19px;
+	height: 19px;
+	background: url(../images/ico.png);
+	margin-right: 8px;
+	vertical-align:middle;
+}
+.cost-txt .fee{
+	background-position: -62px 0;
+}
+.cost-txt .not{
+	background-position: -62px -27px;
+}
+.change_info{
+	margin-top: 27px;
+}
+.change_txt{
+	height:33px;
+	margin-bottom: 21px;
+	
+}
+.change_txt i{
+	width: 16px;
+	height: 24px;
+	background: url(../images/ico.png);
+	display: inline-block;
+	background-position: -62px -53px;
+	margin-right: 12px;
+	vertical-align:middle;
+}
+.change_txt span{
+	width: 66px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #dda826;
+	color: #dda826;
+	border-radius: 25px;
+	display: inline-block;
+	margin-right: 25px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align:middle;
+}
+.change_txt h5{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.city_fl{
+	width: 25%;
+	height: 212px;
+}
+.city_fl img{
+	width:100%;
+	height:100%;
+}
+.city_fr{
+	width:73.5%;
+	color: #555;
+	line-height: 24px;
+	
+}
+.arrange{
+	background: #eee;
+	padding: 10px;
+	color: #7b6666;
+}
+.arrange dt{
+	margin-right: 10px;
+}
+.arrange dt,.arrange dd{
+	float: left;
+}
+.arrange dl{
+	height: 25px;
+	line-height: 25px;
+}
+.book_steps{
+	margin-top: 64px;
+}
+.book_steps li{
+	margin: 0 20px;
+	float: left;
+	height: 80px;
+	text-align: center;
+	position: relative;
+}
+.book_steps li i{
+	width: 14px;
+	height: 23px;
+	background: url(../images/book.png);
+	background-position: -62px 0;
+	margin-top: 20px;
+}
+.book_steps li div{
+	width:92px;
+	height: 45px;
+}
+.book_steps li span{
+	display: block;
+	background: url(../images/book.png);
+	background-position-x: 0;
+	margin:0 auto;
+}
+.book_steps li .book_icox{
+	width: 45px;
+	height: 45px;
+	background-position-y: -98px;
+}
+.book_steps li .book_icoy{
+	width: 41px;
+	height: 40px;
+	background-position-y: -160px;
+}
+.book_steps li .book_icod{
+	width: 44px;
+	height: 41px;
+	background-position-y: -51px;
+}
+.book_steps li .book_icoq{
+	width: 39px;
+	height: 41px;
+	background-position-y: 0px;
+}
+.book_steps li .book_icoc{
+	width: 45px;
+	height: 41px;
+	background-position-y: -212px;
+}
+.book_steps li a{
+	width: 90px;
+	height: 22px;
+	border: 1px solid #2bb9eb;
+	color: #2bb9eb;
+	text-align: center;
+	display: block;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.partner{
+	border: 1px solid #ddd;
+	padding: 17px;
+	position: relative;
+}
+.partner:after {
+    content: '';
+    position: absolute;
+    left:-10px;
+    top: 24px;
+    width:10px;
+    height:13px;
+    background: url(../images/book.png);
+    background-position: -61px -32px;
+}
+.partner a{
+	color: #272b34;
+}
+.partner a:hover{
+	text-decoration: underline;
+	color: #2bb9eb;
+}
+.post{
+	margin-top: 47px;
+	border-top: 1px solid #f0f0f0;
+	padding-top: 23px;
+}
+.post dl{
+	margin-bottom: 14px;
+	overflow: hidden;
+	line-height: 30px;
+	color: #666;
+}
+.post dt{
+	width:5%;
+}
+.post dd{
+	width: 95%;
+}	
+.post dt,.post dd{
+	float: left;
+}
+.post dd input{
+	width: 587px;
+	height: 29px;
+	border: 1px solid #e8e8e8;
+}
+.post dd textarea{
+	width:98%;
+	height:84px;
+	border: 1px solid #e8e8e8;
+}
+/*产品支付*/
+.complete{
+	margin-top: 27px;
+	background: #fff;
+	margin-bottom: 100px;
+}
+.plete_body{
+	padding-bottom: 30px;
+}
+.plete_body>div{
+	padding-left: 66px;
+}
+.plete_list{
+	padding-top: 33px;
+}
+.plete_list .win{
+	width: 63px;
+	height: 63px;
+	background: url(../images/fs.png);
+	margin-right: 50px;
+}
+.plete_list h4{
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #201f1f;
+}
+.plete_list .order p{
+	margin-right: 50px;
+	line-height: 32px;
+}
+.payment{
+	margin-top: 60px;
+}
+.payment li{
+	float: left;
+	height: 78px;
+	line-height: 78px;
+	margin-right:20px;
+}
+.payment li div{
+	border: 1px solid #dfcbd7;
+	width: 197px;
+	height: 76px;
+}
+.payment li .gx{
+	margin: 30px 30px  0 0;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border: 1px solid #c4bfbf;
+	border-radius:6px;
+	cursor: pointer;
+	float: left;
+}
+.payment li .current{
+	background: url(../images/yes.png) no-repeat;
+	background-size: 100% 100%;
+}
+.payment li img{
+	width: 100%;
+	height: 100%;
+}
+.payment li span{
+	margin-right: 28px;
+}
+.plete_footer{
+	width: 100%;
+	height: 48px;
+	background: #e9e9e9;
+	line-height: 48px;
+	color: #666;
+}
+.plete_footer input{
+	margin-top: 15px;
+	margin-right: 27px;
+
+}
+.plete_footer button{
+	width: 200px;
+	height:48px;
+	background: #ff6138;
+	color: #fff;
+	margin-left: 23px;
+	font-size: 18px;
+}
+/*订单详情*/
+.tourists_list li{
+	width: 100%;
+	overflow: hidden;
+}
+.tourists_list div{
+	float: left;
+	margin-right: 5px;
+}
+.hotel_info dl,.hotel_info h4{
+	padding-left: 0;
+	color: #666;
+}

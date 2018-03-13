@@ -1,0 +1,1334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天马旅游</title>
+<link href="style/core.css" rel="stylesheet" type="text/css" />
+<link href="style/common.css" rel="stylesheet" type="text/css" />
+<link href="style/calendar.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style/visa.css" type="text/css" />
+<link href="style/resize.css" rel="stylesheet" type="text/css" />
+<style>
+html, body { background-color: #fff; }
+</style>
+</head>
+<body>
+<!--顶部-->
+<div class="top">
+	<div class="w1200 clearfix">
+        <div class="Logged fl">
+        	<div class="notLogged"><a href="#">登录</a><span>|</span><a href="#">注册</a></div>
+            <div class="hasLogged hide">您好，<a href="#"><strong>张三</strong></a>！</div>
+        </div>
+        <div class="fr clearfix">
+        	<div class="peerEntry fl"><a href="#">同行入口</a></div>
+        	<div class="money_sw_box fl">
+                <a class="money_sw_box_txt" href="javascript:;" data-id="1"><label class="sw_syb">RMB</label><i class="sw_sj"></i></a>
+                <div class="money_sw hide" style="display: none; opacity: 0;">
+                    <a class="on" data-id="1"><label class="sw_syb">RMB</label><label class="sw_txt">人民币元</label></a>
+                    <a data-id="2"><label class="sw_syb">CAD</label><label class="sw_txt">加元</label></a>
+                    <a data-id="3"><label class="sw_syb">USD</label><label class="sw_txt">美元</label></a>
+                </div>
+            </div>
+            <div class="language_box fl">
+            	<a class="language_box_txt" href="javascript:;"><span class="lg_nr"><i class="lg_syb lg_jtzw"></i><label class="lg_txt">简体中文</label></span><i class="sw_sj"></i></a>
+                <div class="language_sw hide" style="display: none; opacity: 0;">
+                    <a class="on"><i class="lg_syb lg_jtzw"></i><label class="lg_txt">简体中文</label></a>
+                    <a><i class="lg_syb lg_ftzw"></i><label class="lg_txt">繁体中文</label></a>
+                    <a><i class="lg_syb lg_en"></i><label class="lg_txt">英文</label></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="white">
+<!--头部-->
+<div class="mainHeader w1200 clearfix">
+	<div class="logo fl"><img src="images/logo.jpg" alt="天马旅游" /></div>
+    <div class="headerTab fl"><a class="on" href="#"><i class="htab htab1"></i>美加旅游</a> <a href="#"><i class="htab htab2"></i>欧洲旅游</a> <a href="#"><i class="htab htab3"></i>亚洲旅游</a><div class="guide-tips" style="display: none;" id="J_guide_tips">
+        <i></i>
+    </div></div>
+     <div class="swim fl">
+    	<img src="images/bm.png" alt="" class="fl"/>
+    	<a href="#" class="america fl">畅游北美</a>
+    	<a href="#" class="reduce fl">立减<i>$120</i></a>
+    </div>
+    <div class="headerSearch fr"><input type="text" name="wd" class="siteTopSearchIpt" placeholder="出发地 / 目的地 / 线路名称 " value="" autocomplete="off"><a href="javascript:;" class="searchBtn"><i class="ico_search"></i></a></div>
+</div>
+<!--导航-->
+<div class="nav_warp">
+	<div class="w1200 clearfix">
+    	<!--左侧菜单-->
+        <div class="classify_nav hide-sn">
+            <span class="cn-t">欧洲旅游&nbsp;&nbsp;全部目的地</span>
+            <div class="nav-bar">
+            	<div class="nav-item">
+                	<div class="sub-item">
+                    	<div class="sub-item-cols"> 
+                        	<div class="col">
+    							<a class="no_ted" href="#"><h4>东岸</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">纽约</a>
+                                    <a href="#">波士顿</a>
+                                    <a href="#">华盛顿</a>
+                                    <a href="#">尼亚加拉大瀑布</a>
+                                    <a href="#">费城</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>西岸</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">洛杉矶</a>
+                                    <a href="#">旧金山</a>
+                                    <a href="#">拉斯维加斯</a>
+                                    <a href="#">盐湖城</a>
+                                    <a href="#">一号公路</a>
+                                    <a href="#">西雅图</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>中南部</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">芝加哥</a>
+                                    <a href="#">休斯顿</a>
+                                    <a href="#">新奥尔良</a>
+                                    <a href="#">圣安东尼奥</a>
+                                    <a href="#">奥斯汀</a>
+                                    <a href="#">达拉斯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-recommend">
+                    	<h3><a href="#">北欧</a></h3>
+                        <div class="recommend-list2">
+                        	<a class="cr_ffb" href="#">冰岛</a><a class="cr_ffb" href="#">格陵兰岛</a><a class="cr_ffb" href="#">法罗群岛</a><a class="cr_ffb" href="#">挪威</a><a class="cr_ffb" href="#">芬兰</a><a class="cr_ffb" href="#">瑞典</a><a class="cr_ffb" href="#">丹麦</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                	<div class="sub-item">
+                    	<div class="sub-item-cols"> 
+                        	<div class="col">
+    							<a class="no_ted" href="#"><h4>东岸2</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">纽约</a>
+                                    <a href="#">波士顿</a>
+                                    <a href="#">华盛顿</a>
+                                    <a href="#">尼亚加拉大瀑布</a>
+                                    <a href="#">费城</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>西岸2</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">洛杉矶</a>
+                                    <a href="#">旧金山</a>
+                                    <a href="#">拉斯维加斯</a>
+                                    <a href="#">盐湖城</a>
+                                    <a href="#">一号公路</a>
+                                    <a href="#">西雅图</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>中南部2</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">芝加哥</a>
+                                    <a href="#">休斯顿</a>
+                                    <a href="#">新奥尔良</a>
+                                    <a href="#">圣安东尼奥</a>
+                                    <a href="#">奥斯汀</a>
+                                    <a href="#">达拉斯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-recommend">
+                    	<h3><a href="#">中欧</a></h3>
+                        <div class="recommend-list2">
+                        	<a class="cr_ffb" href="#">法国</a><a class="cr_ffb" href="#">瑞士</a><a class="cr_ffb" href="#">德国</a><a class="cr_ffb" href="#">奥地利</a><a class="cr_ffb" href="#">捷克</a><a class="cr_ffb" href="#">匈牙利</a><a class="cr_ffb" href="#">英国</a><a class="cr_ffb" href="#">爱尔兰</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                	<div class="sub-item">
+                    	<div class="sub-item-cols"> 
+                        	<div class="col">
+    							<a class="no_ted" href="#"><h4>东岸3</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">纽约</a>
+                                    <a href="#">波士顿</a>
+                                    <a href="#">华盛顿</a>
+                                    <a href="#">尼亚加拉大瀑布</a>
+                                    <a href="#">费城</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>西岸3</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">洛杉矶</a>
+                                    <a href="#">旧金山</a>
+                                    <a href="#">拉斯维加斯</a>
+                                    <a href="#">盐湖城</a>
+                                    <a href="#">一号公路</a>
+                                    <a href="#">西雅图</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>中南部3</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">芝加哥</a>
+                                    <a href="#">休斯顿</a>
+                                    <a href="#">新奥尔良</a>
+                                    <a href="#">圣安东尼奥</a>
+                                    <a href="#">奥斯汀</a>
+                                    <a href="#">达拉斯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-recommend">
+                    	<h3><a href="#">南欧</a></h3>
+                        <div class="recommend-list2">
+                        	<a class="cr_ffb" href="#">希腊</a><a class="cr_ffb" href="#">意大利</a><a class="cr_ffb" href="#">西班牙</a><a class="cr_ffb" href="#">马耳他</a><a class="cr_ffb" href="#">葡萄牙</a><a class="cr_ffb" href="#">土耳其</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/左侧菜单-->
+        <ul class="sn-right classify_nav">
+        	<li><a href="#">当地参团</a></li>
+            <li><a href="#">游轮</a></li>
+            <li>
+            	<i class="hot"></i>
+            	<a href="javascipt:;">定制游</a>
+            	<ul class="menu-box">
+            		<li><a href="#">小包团定制</a></li>
+            		<li><a href="#">私人定制</a></li>
+            	</ul>
+            </li>
+            <li><a href="#">门票</a></li>
+            <li><a href="#">签证保险</a></li>
+            <li><a href="#">攻略</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!--产品预定-->
+<div style="background: #f4f4f4;">
+		
+	<div class="tour_summary w1200 clearfix">
+	    <ul class="clearfix visa-banner">
+			<li class="banner-t current">1填写订单</li>
+			<li class="banner-q">2确认&amp;订单支付</li>
+			<li class="banner-w">3完成预定</li>
+		</ul>
+		<section class="clearfix info-list">
+			<div class="item-tick fl">
+				<div class="bg clearfix">
+					<div class="tick-txt f14"><i class="icoNum mr10">1</i>产品信息</div>
+					<div class="fl tick-f">
+						<img src="images/tick.png" alt="" class=""/>
+					</div>
+				    <div class="price_section fl">
+				      <div class="price_section_tit">选择出游日期和人数</div>
+				      <dl class="rq clearfix">
+				        <dt>出游日期：</dt>
+				        <dd> <span class="booking_float_input"> <i class="detail_icon detail_icon_time"></i>
+				          <input class="js_selectDate" type="text" value="2017-07-13 周四" readonly="">
+				          </span> </dd>
+				        <dd class="playtime"><span></span></dd>
+				      </dl>
+				      <div class="rs" id="tour_plan_d">
+				        <dl class="clearfix">
+				          <dt>出游人数：</dt>
+				          <dd>
+				            <div class="room_nc room" onClick="showPtList(1)"> <span class="fl label">1间房</span>
+				              <div class="fl" style="width:13px; height:9px; position:relative; overflow:hidden; margin:12px 0 0 5px"> <img src="images/row-list-sj.png"> </div>
+				            </div>
+				            <div class="sel_listPt" id="sel_list1" onMouseOut="isOut=true" onMouseOver="isOut=false" style="width:160px; border: 1px solid #e4e4e4; background: #fff; overflow: scroll; overflow-x:hidden; display:none; position:absolute;z-index: 99;"> <a href="javascript:tourView.changeRoomNumber(1)" style="display:block; height:20px;">1</a> <a href="javascript:tourView.changeRoomNumber(2)" style="display:block; height:20px;">2</a> <a href="javascript:tourView.changeRoomNumber(3)" style="display:block; height:20px;">3</a> <a href="javascript:tourView.changeRoomNumber(4)" style="display:block; height:20px;">4</a> <a href="javascript:tourView.changeRoomNumber(5)" style="display:block; height:20px;">5</a> <a href="javascript:tourView.changeRoomNumber(6)" style="display:block; height:20px;">6</a> <a href="javascript:tourView.changeRoomNumber(7)" style="display:block; height:20px;">7</a> <a href="javascript:tourView.changeRoomNumber(8)" style="display:block; height:20px;">8</a> <a href="javascript:tourView.changeRoomNumber(9)" style="display:block; height:20px;">9</a> <a href="javascript:tourView.changeRoomNumber(10)" style="display:block; height:20px;">10</a> <a href="javascript:tourView.changeRoomNumber(11)" style="display:block; height:20px;">11</a> <a href="javascript:tourView.changeRoomNumber(12)" style="display:block; height:20px;">12</a> <a href="javascript:tourView.changeRoomNumber(13)" style="display:block; height:20px;">13</a> <a href="javascript:tourView.changeRoomNumber(14)" style="display:block; height:20px;">14</a> <a href="javascript:tourView.changeRoomNumber(15)" style="display:block; height:20px;">15</a> <a href="javascript:tourView.changeRoomNumber(16)" style="display:block; height:20px;">16</a> <a href="javascript:tourView.changeRoomNumber(17)" style="display:block; height:20px;">17</a> <a href="javascript:tourView.changeRoomNumber(18)" style="display:block; height:20px;">18</a> <a href="javascript:tourView.changeRoomNumber(19)" style="display:block; height:20px;">19</a> <a href="javascript:tourView.changeRoomNumber(20)" style="display:block; height:20px;">20</a> </div>
+				          </dd>
+				        </dl>
+				        <dl class="room-lists clearfix">
+				          <dt style="height: 100px;">&nbsp;</dt>
+				          <dd>
+				            <div class="room_nums" id="count_rooms"></div>
+				            <div class="f14" style="margin:0 0 12px 43px;"><a href="javascript:tourView.addRoom();" class="check_more6">+ 添加一间房间</a></div>
+				          </dd>
+				        </dl>
+				        <dl class="clearfix">
+				          <dt>上车地点：</dt>
+				          <dd>
+				          	<div class="select">
+				          		<select>
+					          		<option>上车地点A</option>
+					          	</select>
+					          	<i></i>
+				          	</div>
+				          	
+				          </dd>
+				        </dl>
+				        <dl class="clearfix">
+				          <dt>语种选择：</dt>
+				          <dd>
+				          	<div class="select">
+				          		<select>
+					          		<option>中文服务</option>
+					          		<option>英文服务</option>
+					          	</select>
+					          	<i></i>
+				          	</div>
+				          	
+				          </dd>
+				        </dl>
+				      </div>
+				    </div>
+			    </div>
+		  		<div class="tick-info bg">
+					<div class="tick-txt f14 mb25"><i class="icoNum mr10">2</i>游客信息</div>
+					<div class="wom_info">
+                        <div class="select_head">
+                            <span class="active">房间一</span>
+                            <span>房间二</span>
+                        </div>
+						<ul class="select_body clearfix">
+                            <li style="display: block;">
+                               <table border="1" class="wom_info">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" class="tl"><i class="cr"></i>成人×1</th>
+                                        <th class="tr"><i class="sl"></i>护照示例</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>护照号码</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文名(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文姓(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table border="1" class="wom_info">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" class="tl"><i class="cr"></i>儿童×1</th>
+                                        <th class="tr"><i class="sl"></i>护照示例</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>护照号码</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文名(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文姓(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td>
+                                            <label>护照号码</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文名(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文姓(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </li>
+                             <li>
+                               <table border="1" class="wom_info">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" class="tl"><i class="cr"></i>成人×1</th>
+                                        <th class="tr"><i class="sl"></i>护照示例</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>护照号码</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文名(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文姓(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table border="1" class="wom_info">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2" class="tl"><i class="cr"></i>儿童×1</th>
+                                        <th class="tr"><i class="sl"></i>护照示例</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>护照号码</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文名(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                        <td>
+                                            <label>中文姓(拼音)</label>
+                                            <input type="text" placeholder="与护照一致" name=""/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </li>        
+                        </ul>
+                    </div>
+					
+				</div>
+				<!--附加服务-->
+				<div class="bg">
+					<div class="tick-txt f14"><i class="icoNum mr10">3</i>附加服务</div>
+					<table border="0" class="appendTab">
+						<tr>
+							<td colspan="5"><span class="f16">保险</span>(强烈推荐)</td>
+							
+						</tr>
+						<tr>
+							<td colspan="5">中国大陆境内出发(本保险需要在旅行开始前购买,且旅行开始于大陆境内,结束于中国大陆境内)</td>
+						</tr>
+						<tr class="grey">
+							<td class="g3 txtNum">
+								<input type="checkbox" checked="checked" />利宝保险国际旅行保障计划 <a href="#" class="to">(查看详情)</a>
+							</td>
+							<td class="g1">
+								<select class="combo">
+									<option>套餐一</option>
+									<option>套餐二</option>
+								</select>
+							</td>
+							<td class="g4 time">
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="startDate" class="js_hotelDate J_calendar" placeholder="开始时间" type="text" autocomplete="off"  readonly="readonly" />
+								</div> - 
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="EndDate" class="js_hotelDate J_calendar" placeholder="结束时间"  type="text" autocomplete="off"  readonly="readonly" /> 
+								</div>
+								 
+							</td>
+							<td class="g1"><span class="part">￥83</span>一份</td>
+							<td class="g1">
+								<input type="text" name="" value="2" class="copy"/>&nbsp;份
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">境外出发(适用于持中国护照且境外出发的旅行者、留学生、务工者及其他长期海外居住者.注:境外连续停留时间+保险期限不得超过365天)</td>
+						</tr>
+						<tr class="grey">
+							<td class="g3 txtNum">
+								<input type="checkbox" checked="checked" />保游全球"无忧旅行保障计划<a href="#" class="to">(查看详情)</a>
+							</td>
+							<td class="g1">
+								<select class="combo">
+									<option>套餐一</option>
+									<option>套餐二</option>
+								</select>
+							</td>
+							<td class="g4 time">
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="startDate" class="js_hotelDate J_calendar" placeholder="开始时间" type="text" autocomplete="off"  readonly="readonly" />
+								</div> - 
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="EndDate" class="js_hotelDate J_calendar" placeholder="结束时间"  type="text" autocomplete="off"  readonly="readonly" /> 
+								</div>
+								 
+							</td>
+							<td class="g1"><span class="part">￥83</span>一份</td>
+							<td class="g1">
+								<input type="text" name="" value="2" class="copy"/>&nbsp;份
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5"></td>
+						</tr>
+						<tr>
+							<td colspan="5"><span class="f16">电话卡</span>(请在出行前7天订购)</td>
+						</tr>
+						<tr class="grey">
+							<td class="g3 txtNum">
+								<input type="checkbox" checked="checked" />美国/加拿大/墨西哥/中国通用4G手机上网 电话卡(中国大陆包邮)<a href="#" class="to">(查看详情)</a>
+							</td>
+							<td class="g1">
+								<select class="combo">
+									<option>7天</option>
+									<option>8天</option>
+								</select>
+							</td>
+							<td class="g4 time">
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="startDate" class="js_hotelDate J_calendar" placeholder="开始时间" type="text" autocomplete="off"  readonly="readonly" />
+								</div>
+							</td>
+							<td class="g1"><span class="part">￥83</span>一份</td>
+							<td class="g1">
+								<input type="text" name="" value="2" class="copy"/>&nbsp;份
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5"></td>
+						</tr>
+						<tr>
+							<td colspan="5"><span class="f16">WI-FI</span>(请在出行前5天订购)</td>
+						</tr>
+						<tr class="grey">
+							<td class="g3 txtNum">
+								<input type="checkbox" checked="checked" />美国加拿大通用WIFI租凭4G不限流量(仅限中国大陆自提)<a href="#" class="to">(查看详情)</a>
+							</td>
+							<td class="g1">
+								<select class="combo">
+									<option>机场自提</option>
+									<option>机场自提</option>
+								</select>
+							</td>
+							<td class="g4 time">
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="startDate" class="js_hotelDate J_calendar" placeholder="开始时间" type="text" autocomplete="off"  readonly="readonly" />
+								</div> - 
+								<div>
+									<i class="detail_icon detail_icon_time"></i>
+									<input id="EndDate" class="js_hotelDate J_calendar" placeholder="结束时间"  type="text" autocomplete="off"  readonly="readonly" /> 
+								</div>
+							</td>
+							<td class="g1"><span class="part">￥83</span>一份</td>
+							<td class="g1">
+								<input type="text" name="" value="2" class="copy"/>&nbsp;份
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5"></td>
+						</tr>
+						<tr>
+							<td colspan="5"><span class="f16">其他</span></td>
+						</tr>
+						<tr class="grey">
+							<td class="g3 txtNum">
+								<input type="checkbox" checked="checked" />纽约市夜游(需4:30PM见到导游的客人才可以参加)<a href="#" class="to">(查看详情)</a>
+							</td>
+							<td class="g1">
+								
+							</td>
+							<td class="g4 time">
+								<span>成人<i class="part">￥83</i></span>&nbsp;
+								<span>儿童<i class="part">￥83</i></span>
+							</td>
+							<td class="g1"></td>
+							<td class="g1">
+								<input type="text" name="" value="2" class="copy"/>&nbsp;份
+							</td>
+						</tr>
+					</table>
+						
+				</div>
+				<div class="bg">
+					<div class="tick-txt f14 mb25"><i class="icoNum mr10">3</i>订单备注</div>
+					<textarea class="bz bg"></textarea>
+				</div>
+				<div class="tr">
+					<div class="zf fr"><a href="产品支付.html">去支付</a></div>
+					<div class="fr zf_Tip">
+						<p>支付前,请仔细核对订单信息</p>
+						<p>
+							<input type="checkbox" checked="checked" name="" />同意预定信息
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="fr reserve write">
+				<div class="reserve-t clearfix">
+					<dl>
+						<dt><i class="ico"></i></dt>
+						<dd class="must">
+							订购人信息<span>(必填)</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><i>*</i>姓名</dt>
+						<dd>
+							<input type="text" name="name" />
+						</dd>
+					</dl>
+					<dl>
+						<dt><i>*</i>手机</dt>
+						<dd>
+							<button>+86</button>
+							<input type="tel" placeholder="数字/空格/-/0" />
+						</dd>
+					</dl>
+					<dl>
+						<dt><i>*</i>邮箱</dt>
+						<dd>
+							<input type="email" name="email" />
+						</dd>
+					</dl>
+				</div>
+				<div class="reserve-b tick_b">
+					<h4 class="must"><i class="ico-money"></i>订单结算</h4>
+					<h3>奥兰多环球影城/冒险岛 1 日折扣电子票</h3>
+					<time>出行日期:2017/05/05</time>
+					<div class="list dosh">成人×1&nbsp;儿童×1<span class="fr">c$880.79</span></div>
+					<div class="list">保险×1<span class="fr">c$880.79</span></div>
+					<div class="total">总计金额<span class="fr">c$880.79</span></div>
+					
+				</div>
+			</div>
+		</section>
+	 
+	</div>
+</div>
+<div class="white">
+  <div class="footer w1200 clearfix overflow">
+    <div class="logo fl"><img src="images/logo.jpg" alt="天马旅游" /></div>
+    <div class="abouts fl">
+      <dl class="clearfix">
+        <dt>关于我们</dt>
+        <dd><a href="#">公司简介</a> <a href="#">联系我们</a> <a href="#">合作伙伴</a> <a href="#">商务合作</a></dd>
+      </dl>
+      <dl class="clearfix">
+        <dt>网站条款</dt>
+        <dd><a href="#">法律声明</a> <a href="#">隐私政策</a> <a href="#">服务条款</a> <a href="#">低价保证</a></dd>
+      </dl>
+      <dl class="clearfix">
+        <dt>友情链接</dt>
+        <dd><a href="#">友情链接1</a> <a href="#">友情链接2</a> <a href="#">友情链接3</a> <a href="#">友情链接4</a></dd>
+      </dl>
+    </div>
+    <div class="fr mt20"><img src="images/24tel.png" /></div>
+  </div>
+</div>
+<div class="footer_bottom">
+  <div class="w1200 clearfix">
+    <div class="social-share fr" data-sites="twitter,facebook,wechat,weibo"></div>
+    <div class="tc" style="line-height:20px;">
+      <p>Copyright ©2015-2017 版权所有 云林科技网络有限公司  京ICP备10011865号-1</p>
+      <p>京公网安备11010502022735号 旅行社业务经营许可证号：X-XXX-XXXXXXX</p>
+    </div>
+  </div>
+</div>
+<div class="rightBar">
+  <div style="height:50px"></div>
+  <div class="personcenter hand"> 
+  	<a  href="个人中心.html" rel="nofollow" >
+    <div class="del">
+      <div class="pos_r">
+        <p>个人中心</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-person"></i> </a> </div>
+  <div class="right-coll hand on"> <a href="javascript:;">
+    <div class="del">
+      <div class="pos_r">
+        <p>收藏</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-coll"></i> </a> </div>
+  <div class="right-order hand"> <a href="javascript:;">
+    <div class="del">
+      <div class="pos_r">
+        <p>查看订单</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-order"></i> </a> </div>
+  <div class="linkphone hand" href="javascript:;" rel="nofollow">
+    <div class="del" style="width:210px;">
+      <div class="pos_r">
+        <p>全球 7x24小时客服电话</p>
+        <p>400-008-8177（全球）</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-tel"></i> </div>
+  <div class="linkEmail hand" href="javascript:;" rel="nofollow">
+    <div class="del" style="width:210px;">
+      <div class="pos_r">
+        <p>电子邮箱</p>
+        <p>abc@abc.com</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-email"></i> </div>
+  <div class="linkadvisory hand" href="javascript:;" rel="nofollow">
+    <div class="del">
+      <div class="pos_r">
+        <p>在线咨询</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-advisory"></i> </div>
+  <div class="linksurvey hand" href="javascript:;" rel="nofollow"> <a href="javascript:;">
+    <div class="del">
+      <div class="pos_r">
+        <p>问卷调查</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-survey"></i> </a> </div>
+  <div class="rightBarBot hand"> <a class="linkTop" id="rightbar-linktop" href="javascript:;">
+    <div class="del">
+      <div class="pos_r">
+        <p>回到顶部</p>
+        <span></span> </div>
+    </div>
+    <i class="barico-gotop"></i> </a> </div>
+</div>
+<input type="hidden" id="dateSel" value="" />
+<input type="hidden" id="J_tourcode" value="7365">
+<input type="hidden" id="J_rule_name" value="0">
+<input type="hidden" id="J_price_arr" value="0|USD|1678.00|1171.00|820.33|723.50|0.00|">
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/template.js"></script>
+<script src="js/common.js"></script> 
+<script src="js/tour_view.js"></script> 
+<script src="js/tour_view2017.js"></script> 
+<script src="js/calendar.js"></script> 
+<script id="addRoomTemplate" type="text/html">
+		<div class="room_nums_d room-list clearfix" id="room_no_{{roomIndex}}">
+			<div class="fl f12 mr10" style="line-height:24px;color:#888;">房间<b>{{roomNumber}}</b></div>
+			<div class="fl select_box">
+				<div class="selected_nums room_type" id="d_room_type_{{roomIndex}}">双人标准间</div>
+				<i></i>
+				<select name="room[{{roomIndex}}][roomtype]" id="i_room_type_{{roomIndex}}" onchange="tourView.checkRoomPassenger('{{roomIndex}}', '3');" class="room_type">
+					<option value="双人标准间" selected="">双人标准间</option>
+					<option value="豪华房">豪华房</option>
+				</select>
+			</div>
+			<div class="fl select_box">
+				<div class="selected_nums bed_type" id="d_bed_type_{{roomIndex}}">queen</div>
+				<i></i>
+				<select name="room[{{roomIndex}}][bedtype]" id="i_bed_type_{{roomIndex}}" onchange="tourView.checkRoomPassenger('{{roomIndex}}', '2');" class="bed_type">
+					<option value="queen" selected="">queen</option>
+					<option value="king">king</option>
+					<option value="2 double beds">2 double beds</option>
+				</select>
+			</div>
+			<div class="fl select_box">
+				<div class="selected_nums adult_sel_nums" id="d_adult_nums_{{roomIndex}}">2 成人</div>
+				<i></i>
+				<select name="room[{{roomIndex}}][adult]" id="i_adult_nums_{{roomIndex}}" onchange="tourView.checkRoomPassenger('{{roomIndex}}', '1');" class="adult_nums">
+					<option value=1>1</option>
+					<option value=2 selected="">2</option>
+					<option value=3>3</option>
+					<option value=4>4</option>
+				</select>
+			</div>
+
+			<div class="fl select_box">
+				<div class="selected_nums child_sel_nums" id="d_child_nums_{{roomIndex}}">0 儿童</div>
+				<i></i>
+				<select name="room[{{roomIndex}}][child]" id="i_child_nums_{{roomIndex}}" onchange="tourView.checkRoomPassenger('{{roomIndex}}', '0');" class="child_nums">
+					<option value=0>0</option>
+					<option value=1>1</option>
+					<option value=2>2</option>
+					<option value=3>3</option>
+				</select>
+			</div>
+</script>
+<script>
+$(function() {
+	saas.calendar({
+autoRender: false,
+trigger: '.J_calendar',
+triggerEvent: 'click',
+bimonthly: true,
+template: 'small',
+cascading: false ,
+showNumberOfDays: true,
+cascadingMax: 20,
+monthNext: 6,
+zIndex: 21
+})
+    //日历框的弹出
+    var date = new Date();
+    date.setDate(1);
+    var startDate = date;
+    var endDate = date;
+	var run = true;
+	var $document = $(document);
+    var abroadGroupCalendar; //主日历
+    var abroadGroupCalendarTab; //主日历tab
+    var abroadGroupCalendarRight; //右侧小日历
+    var playDay = 5; //游玩天数
+	var dayPriceList = [{"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-06-14"},
+        {"price": 388,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "售完","date": "2017-06-15"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-06-16"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "7","date": "2017-06-17"},
+        {"price": 188,"childprice": 151,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-06-18"},
+		{"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-07-14"},
+        {"price": 388,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "售完","date": "2017-07-15"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-07-16"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "7","date": "2017-07-17"},
+        {"price": 187,"childprice": 151,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-08-18"},
+		{"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-08-14"},
+        {"price": 388,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "售完","date": "2017-08-15"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-08-16"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "7","date": "2017-08-17"},
+        {"price": 187,"childprice": 151,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-08-18"},
+		{"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-09-14"},
+        {"price": 388,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "售完","date": "2017-09-15"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-09-16"},
+        {"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "7","date": "2017-09-17"},
+        {"price": 187,"childprice": 151,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-09-18"},
+		{"price": 288,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "充足","date": "2017-10-14"},
+        {"price": 388,"childprice": 154,"isPromotion": "","routeId": 93011,"number": "售完","date": "2017-10-15"}];
+	var monthdata={"2017-06":{"price":188},"2017-07":{"price":187},"2017-08":{"price":187},"2017-09":{"price":187},"2017-10":{"price":288}};
+	for (var i = 0; i < 12; i++) {
+		var tempDate = saas.calendar.monthOffset(date, i);
+		var yeahMonth = saas.calendar.dateFormat(tempDate, "yyyy-MM");
+		if (monthdata[yeahMonth] && monthdata[yeahMonth].price) {
+			if (run) {
+				startDate = tempDate;
+				run = false;
+			}
+			endDate = tempDate;
+		}
+	}
+	
+	function calcRightDate(date) {
+        var $text = $(".playtime span");
+        //12-25 周六出发 -- 12-31 周一返回
+        var returnDate = saas.calendar.dateOffset(date, playDay);
+        var str = saas.calendar.dateFormat(date, "yyyy-MM-dd") + " <i>" +
+            "出发</i> , " +
+            saas.calendar.dateFormat(returnDate, "yyyy-MM-dd") + " " +
+            "<i>返回</i>";
+        $text.html(str)
+        //成人儿童
+
+
+    }
+	
+    // 特价日历
+    function initCalendar(startDate, endDate) {
+        abroadGroupCalendar = saas.calendar({
+            date: saas.calendar.dateFormat((startDate, "yyyy-MM")),
+            autoRender: true,
+            //自动渲染日历
+            isTodayClick: false,
+            trigger: "#calendar-area",
+            //触发的位置
+            frequent: true,
+            // 单月显示
+            triggerEvent: "click",
+            //响应的触发事件 自动渲染时此参数无效
+            sourceFn: fillData,
+            //填充时间价格表
+            priceTipText: "",
+            selectDateCallback: function(that, o) {
+                var newDate = saas.calendar.getDateFromFormattedString(this.getSelect()[0], "yyyy-MM-dd");
+                var ymd = this.getSelect()[0];
+                abroadGroupCalendarRight.selected = this.selected;
+				calcRightDate(newDate);
+                $(".js_selectDate").val(ymd);
+                var thisVal = $('.js_selectDate').val(),
+                //获取当前日期值
+                week = newDate.getDay(),
+                //获取星期
+                weekArr = ['日', '一', '二', '三', '四', '五', '六'];
+                $('.js_selectDate').val(thisVal + ' 周' + weekArr[week]);
+            },
+            completeCallback: function() { //数据加载完成并显示出日历后的回调函数,点击上下月回调函数。
+                // 边框样式调整
+            } //日历加载完成后执行的回掉函数
+        });
+        abroadGroupCalendarRight = saas.calendar({
+            date: saas.calendar.dateFormat(startDate, "yyyy-MM"),
+            template: "small",
+            trigger: ".js_selectDate",
+            //触发的位置
+            sourceFn: fillData,
+            //填充时间价格表
+            monthPrev: 0,
+            //日历可以往前翻页2页
+            monthNext: 10,
+            bimonthly: true,
+            selectDateCallback: function() {
+                abroadGroupCalendar.now = this.now;
+                abroadGroupCalendar.selected = this.selected;
+                abroadGroupCalendar.render(false);
+
+                var newDate = saas.calendar.getDateFromFormattedString(this.getSelect()[0], "yyyy-MM-dd");
+				abroadGroupCalendarTab.switchTab(newDate);
+				calcRightDate(newDate);
+
+                //选择弹窗日历 顶部预订 和 悬浮预订模块日期变更
+                var thisVal = this.$trigger.val(),
+                //获取当前日期值
+                week = newDate.getDay(),
+                //获取星期
+                weekArr = ['日', '一', '二', '三', '四', '五', '六'];
+                $('.js_selectDate').val(thisVal + ' 周' + weekArr[week]);
+            },
+            completeCallback: function() {}
+        });
+    }
+    /**
+		 * 价格日历点击后的预订弹框
+		 * @param date 日期
+		 * @param price 成人价
+		 * @param childPrice 儿童价
+		 */
+    function calPopup(date, price, childPrice) {
+        $('#selectDate').val(date);
+    };
+
+    function fillData() {
+        var self = this;
+        /**
+		 * 获取剩余HTML
+		 * @param number 剩余数量
+		 * @returns {string} 生成的HTML
+		 */
+        function getStoreHTML(number) {
+            var html = "";
+            if (number <= 0) {
+                html = "售罄";
+            } else if (number < 10) {
+                html = "余" + number
+            } else if (number == "充足" || number == "售完" || number == "售罄") {
+                html = number;
+            }
+            return html;
+        }
+
+        /**
+         * 创建浮动框
+         * @returns {*|jQuery|HTMLElement}  被创建的浮动框jQuery对象
+         */
+        function createHover() {
+            var $hover = $(".calhover");
+            if ($hover.length <= 0) {
+                $hover = $('<div class="calhover"><div class="triangle"></div></div>');
+            } else {
+                $hover.html('<div class="triangle"></div>');
+            }
+            $("body").append($hover);
+            $hover.removeClass("calhover-right");
+            return $hover;
+        }
+
+        /**
+         * 设置显示
+         * @param data Ajax返回值
+         * @returns {boolean}
+         */
+        function setDate(data) {
+
+            /**
+             * 退化的情况，无任何返回值
+             */
+            if (!data) {
+                return false;
+            }
+
+            var $allTd = self.wrap.find('td[data-date-map]'); //所有的日历单元格
+            $allTd.children().addClass("caldisabled"); //先禁用所有的日历日期
+            //对json对象进行迭代处理
+            data.forEach(function(row) {
+                //row 每个json对象中的元素单元，格式如下所示
+                // {
+                //     "price": 3988,
+                //     "route": "A",
+                //     "isPromotion": "下单满3000减200元，成人儿童可享受，不与其他优惠同享；\n下单满2000减150元，成人儿童可享受，不与其他优惠同享；\n下单满1000减100元，成人儿童可享受，不与其他优惠同享；"
+                //     "routeId": 0,
+                //     "number": -1,
+                //     "date": "2016-06-11",
+                // }
+                var jsonDateStr = row.date; //json单元-日期
+                //将json单元日期字符串转化为JS日历对象(new Date())
+                var date = saas.calendar.getDateFromFormattedString(jsonDateStr, self.options.dateFormat);
+
+                //将日历对象转换为字符串(只保留参数dateFormat设定的数据，默认值为年月日)
+                var dateStr = saas.calendar.dateFormat(date, self.options.dateFormat);
+
+                //json单元-价格
+                var price = row.price;
+                //json单元儿童-价格
+                var childprice = row.childprice;
+
+                //价格-浮点数
+                var number = row.number;
+
+                //json单月-是否促销
+                var promotion = row.isPromotion;
+
+                //json单元-日期对应文档中的td单元格
+                var $td = self.wrap.find('td[data-date-map=' + dateStr + ']');
+
+                //如果json中的数据有td单元格相对应，则显示数据信息
+                if ($td) {
+                    $td.attr("data-price", price);
+                    $td.attr("data-childprice", childprice);
+                    //显示价格
+                    if (price && price != '0' && price != '') {
+                        $td.find(".calprice").html('¥<em>' + price + '</em>');
+                    }
+                    //显示库存
+                    if (number && number != '') {
+                        $td.find(".calinfo").html(getStoreHTML(number));
+                    }
+
+                    //是否售罄
+                    if (number <= 0 || number == "售罄" || number == "售完") {
+                        $td.find(".calinfo").addClass("sellout");
+                    } else {
+                        $td.children().removeClass("caldisabled")
+                    }
+                }
+            });
+
+            //显示促销/线路/休假浮动框
+            (function() {
+                var festival; //节日
+                var route; //线路
+                var sale; //促销
+                //鼠标移开，隐藏浮动框
+                self.wrap.on("mouseleave", "[data-date-map]",
+                function() {
+                    var $hover = $(".calhover");
+                    $hover.hide();
+                    $hover.css({
+                        left: 0,
+                        top: 0
+                    });
+                });
+
+                //鼠标移入，显示浮动框
+                self.wrap.on("mouseenter", "[data-date-map]",
+                function() {
+                    var hasOnce = false;
+
+                    //td单元格
+                    var $this = $(this);
+
+                    //sting 当前单元格日期字符串
+                    var date = $this.attr("data-date-map");
+
+                    //创建浮动框jQuery DOM对象
+                    var $hover = createHover();
+
+                    //休假
+                    var $calfestival = $('<p class="calfestival"><i>休</i><span></span></p>');
+                    var $calfestivalContent = $calfestival.find("span");
+
+                    //线路
+                    var $calroute = $('<p class="calroute"><i> </i><span></span></p>');
+                    var $calrouteTitle = $calroute.find("i");
+                    var $calrouteContent = $calroute.find("span");
+
+                    //显示坐标
+                    var left = $this.offset().left;
+                    var top = $this.offset().top + $this.outerHeight();
+
+                    //节日
+                    var thatFestival = self.options.festival[date];
+                    festival = thatFestival;
+                    if (thatFestival) {
+                        hasOnce = true;
+                        $calfestivalContent.html(thatFestival.vacationName);
+                        $hover.append($calfestival);
+                    }
+
+                    //获取json数据填充到页面中
+                    data.forEach(function(row) {
+                        if (row.date == date) {
+                            var route = row.route;
+                            if (route && route != '') {
+                                hasOnce = true;
+                                $calrouteTitle.html(route);
+                                $calrouteContent.html("行程");
+                                $hover.append($calroute);
+                            }
+                            if (sale && sale != '') {
+                                hasOnce = true;
+                                $calsaleContent.html(sale);
+                                $hover.append($calsale);
+                            }
+                        }
+                    });
+
+                    //页面右侧处理，如果屏幕过小，则显示在左侧
+                    var width = $hover.outerWidth();
+
+                    var $table = $this.parents(".caltable");
+                    var tableLeft = $table.offset().left;
+                    var tableWidth = $table.outerWidth();
+                    if (width + left - tableLeft > tableWidth) {
+                        left = tableLeft + (tableWidth - width);
+                        $hover.addClass("calhover-right");
+                    }
+
+                    //显示
+                    if (hasOnce) {
+                        if ($this.children().is(".notThisMonth") && self.options.bimonthly) {
+                            //hide
+                        } else if (!self.wrap.is(".ui-calendar-mini")) {
+                            $hover.show();
+                        }
+                        $hover.css({
+                            left: left,
+                            top: top
+                        });
+
+                        if (self.options.zIndex) {
+                            $hover.css("zIndex", self.options.zIndex + 1);
+                        }
+                    }
+                });
+            })();
+        }
+        this.loading();
+        setDate(dayPriceList);
+        self.loaded();
+    }
+	
+    initCalendar(startDate, endDate);//初始化两个日历
+    initCalendarTab(monthdata, startDate, endDate);//月份切换卡
+    selectLowestPriceDateForDefault();//默认选中当前月份的最低价
+	
+    function initCalendarTab(data, startDate, endDate) {
+
+        //console.log(data)
+        abroadGroupCalendarTab = {
+            init: function () {
+                this.newDate = saas.calendar.getDateFromFormattedString(saas.calendar.dateFormat(startDate, "yyyy-MM-dd"), "yyyy-MM-dd");
+
+                this.newDate.setDate(1);
+                this.minDate = saas.calendar.monthOffset(this.newDate, -abroadGroupCalendar.options.monthPrev);
+                this.maxDate = saas.calendar.monthOffset(this.newDate, abroadGroupCalendar.options.monthNext);
+
+                this.$tab = $(".calendar-tab");
+
+                this.$calendarTabsPrev = $(".calendar-tabs-prev");
+                this.$calendarTabsNext = $(".calendar-tabs-next");
+
+                this.tabs = [];
+                this.changeTabs(this.newDate);
+
+                this.bindEvent();
+            },
+            changeTabs: function (date) {
+                var self = this;
+                this.$calendarTabsPrev.removeClass("disabled");
+                this.$calendarTabsNext.removeClass("disabled");
+                (function () {
+                    var tempDate = saas.calendar.monthOffset(date, -4);
+                    var isDisable = true;
+                    for (var i = 0; i < 4; i++) {
+                        var prevDate = saas.calendar.monthOffset(tempDate, i);
+                        if (prevDate >= self.minDate) {
+                            isDisable = false;
+							
+                        }
+                    }
+                    if (isDisable) {
+                        self.$calendarTabsPrev.addClass("disabled");
+                    }
+                })();
+                (function () {
+                    var tempDate = saas.calendar.monthOffset(date, 4);
+                    var isDisable = false;
+                    for (var i = 0; i < 4; i++) {
+                        var nextDate = saas.calendar.monthOffset(tempDate, -i);
+                        if (nextDate > self.maxDate) {
+                            isDisable = true;
+                        }
+                        if (nextDate > endDate) {
+                            isDisable = true;
+                        }
+                    }
+                    if (isDisable) {
+                        self.$calendarTabsNext.addClass("disabled");
+                    }
+                })();
+
+                this.$tab.removeClass("disabled");
+                for (var i = 0; i < 4; i++) {
+                    var datePoint = new Date(date);
+                    datePoint = saas.calendar.monthOffset(date, i);
+                    this.tabs[i] = datePoint;
+                    var $thatTab = this.$tab.eq(i);
+                    var yearMonth = saas.calendar.dateFormat(datePoint, "yyyy-MM");
+                    $thatTab.find(".calendar-tab-month").html(saas.calendar.dateFormat(datePoint, "yyyy年M月"));
+
+                    if (data[yearMonth] && data[yearMonth].price) {
+                        var price = data[yearMonth].price;
+                        $thatTab.find(".calendar-tab-price").html("￥" + price + "起");
+                        $thatTab.find(".calendar-tab-price").removeClass("calendar-tab-price-none");
+                    } else {
+                        var tempDate = saas.calendar.getDateFromFormattedString(yearMonth, "yyyy-MM");
+
+                        var month = null;
+                        for (var j = 0; j < 12, tempDate < this.maxDate; j++) {
+                            tempDate = saas.calendar.monthOffset(tempDate, 1);
+                            tempYeahMonth = saas.calendar.dateFormat(tempDate, "yyyy-MM");
+                            if (data[tempYeahMonth] && data[tempYeahMonth].price) {
+                                month = tempDate.getMonth() + 1;
+                                break;
+                            }
+                        }
+
+                        if (month) {
+                            $thatTab.find(".calendar-tab-price").html("无团期" + "，" + month + "月有售");
+                        } else {
+                            $thatTab.find(".calendar-tab-price").html("无团期");
+                        }
+
+                        $thatTab.find(".calendar-tab-price").addClass("calendar-tab-price-none");
+                    }
+                    $thatTab.attr("data-date", yearMonth);
+                    if (datePoint < this.minDate) {
+                        $thatTab.addClass("disabled");
+                    }
+                    if (datePoint > this.maxDate) {
+                        $thatTab.addClass("disabled");
+                    }
+                }
+
+                this.$tab.filter(":not(.disabled)").eq(0).click();
+            },
+            bindEvent: function () {
+                var self = this;
+                $document.on("click", ".calendar-tabs-prev", function () {
+                    if (self.$calendarTabsPrev.is(".disabled")) {
+                    } else {
+                        self.newDate = saas.calendar.monthOffset(self.newDate, -4);
+                        self.changeTabs(self.newDate);
+                    }
+                });
+
+                $document.on("click", ".calendar-tabs-next", function () {
+                    if (self.$calendarTabsNext.is(".disabled")) {
+                    } else {
+                        self.newDate = saas.calendar.monthOffset(self.newDate, 4);
+                        self.changeTabs(self.newDate);
+                    }
+                });
+
+                $document.on("click", ".calendar-tab", function () {
+                    var $this = $(this);
+                    if ($this.is(".disabled")) {
+                        //Do nothing
+                    } else {
+                        $this.addClass("active").siblings().removeClass("active");
+                        var dateStr = $this.attr("data-date");
+                        var date = saas.calendar.getDateFromFormattedString(dateStr, "yyyy-MM");
+                        abroadGroupCalendar.now = date;
+                        abroadGroupCalendar.render();
+                    }
+                });
+            },
+            switchTab: function (date) {
+                var self = this;
+                var diff = monthDiff(this.newDate, date);
+                var start = Math.floor(diff / 4) * 4;
+                self.newDate = saas.calendar.monthOffset(self.newDate, start);
+                self.changeTabs(self.newDate);
+                var $tabActive = this.$tab.filter("[data-date=" + saas.calendar.dateFormat(date, "yyyy-MM") + "]");
+                this.$tab.removeClass("active");
+                $tabActive.addClass("active");
+                $tabActive.click();
+
+            }
+        };
+
+        abroadGroupCalendarTab.init()
+
+    }
+});
+
+//----------------------------------默认选中当前月份的最低价-----------------------------------------
+function selectLowestPriceDateForDefault() {
+    var dateSel = $("#dateSel").val();
+    var finalSelectedDate;
+    if (dateSel) {
+        //先选择月份，再选择某天
+        var dateSelected = saas.calendar.getDateFromFormattedString(dateSel, "yyyy-MM-dd");
+		var yeahMonth = saas.calendar.dateFormat(dateSelected, "yyyy-MM");
+        var oldYearMonth = $(".calendar-tab.active").attr("data-date");
+        var identifier = ".calendar-tab[data-date=\"" + yeahMonth + "\"]";
+        if (oldYearMonth != yeahMonth && $(identifier).find("calendar-tab-price-none").size() < 1) {
+            $(".calendar-tab.active").removeClass("active");
+            $(identifier).click();
+        }
+        $("[data-date-map='" + dateSel + "']").click();
+        finalSelectedDate = dateSel;
+    } else if (dateSel == "") {
+        //如果当月只剩下7天，那么默认显示第下月的
+        var currDate = new Date();
+        var totalMillSeconds = currDate.getTime();
+        totalMillSeconds += 7 * 24 * 60 * 60 * 1000;
+        var ahead7DayDate = new Date();
+        ahead7DayDate.setTime(totalMillSeconds);
+        //只有当前月仅剩7天，且下个月有日历才切换到下月份
+        var monthStr = ahead7DayDate.getMonth() > 8 ? ahead7DayDate.getMonth() + 1 : "0" + (ahead7DayDate.getMonth() + 1);
+        var identifier = ".calendar-tab[data-date=\"" + ahead7DayDate.getFullYear() + "-" + monthStr + "\"]";
+        if (currDate.getMonth() != ahead7DayDate.getMonth() && $(identifier).find(".calendar-tab-price-none").size() < 1) {
+            $(identifier).click();
+        }
+
+        var currentMonth = $(".calendar-tab.active").attr("data-date");
+        var lowestPrice = Number.MAX_VALUE;
+        var selectDate = null;
+        $("[data-date-map]").each(function(index, e) {
+            var $this = $(e);
+            var dayOfMonth = $this.attr("data-date-map");
+            if (dayOfMonth && dayOfMonth.indexOf(currentMonth) != -1) {
+                //表示是当月
+                var price = $this.find("em").text();
+                if (price && parseInt(price) < lowestPrice) {
+                    lowestPrice = parseInt(price);
+                    selectDate = dayOfMonth;
+                }
+            }
+        });
+        $("[data-date-map='" + selectDate + "']").click();
+        finalSelectedDate = selectDate;
+    }
+
+}
+function monthDiff(dateA, dateB) {
+    var yearDiff = dateB.getYear() - dateA.getYear();
+    var monthDiff = dateB.getMonth() - dateA.getMonth();
+    return yearDiff * 12 + monthDiff;
+}
+/*信息切换*/
+$(function(){
+ $(".select_head span").click(function(){
+ $(this).addClass("active").siblings().removeClass("active"); //切换选中的按钮高亮状态
+ var index=$(this).index(); //获取被按下按钮的索引值，需要注意index是从0开始的
+ $(".select_body > li").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+ });
+});
+</script>
+</body>
+</html>

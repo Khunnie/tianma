@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+		<link rel="stylesheet" href="style/weui.css" />
+		<link rel="stylesheet" href="style/weui2.css"/>
+		<style>
+			.order2-2b{padding:0.5rem 0;}
+			.order2-2b dl{background-color:#fff;padding:0.5rem;}
+			.tit{padding:1rem 0.5rem 0.5rem;color:#999;border-bottom:1px solid #ddd;}
+		</style>
+	</head>
+	<body style="background: #f5f5f5;">
+		<div class="global" style="margin-bottom: 4rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>签证预定</b></div>
+			    <div class="otherFun">
+			    	<a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			    </div>
+			</div>
+			
+			<section class="order2-2 customer_box" style="padding-top:0;">
+				<div class="search-hotel-block order2-2b">
+					<dl class="mb05">
+						<dt>在职人员</dt>
+						<dd class="arrow">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='ry'/>
+			                </div>
+						</dd>
+					</dl>
+					<dl class="mb05">
+						<dt>套餐</dt>
+						<dd class="arrow">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='tc'/>
+			                </div>
+						</dd>
+					</dl>
+					<dl class="mb05">
+						<dt>旅客信息</dt>
+					</dl>
+					<dl>
+						<dt>订购人信息</dt>
+					</dl>
+					 <dl>
+						<dt>姓名</dt>
+						<dd>
+							<input type="text" id="contacts" name="contacts" placeholder="请输入联系人姓名" />
+						</dd>
+					</dl>
+                    <dl>
+						<dt>手机</dt>
+						<dd>
+							<input type="tel" id="phone" name="phone" placeholder="请输入联系人手机号码" /> 
+						</dd>
+					</dl>
+					 <dl>
+						<dt>微信号</dt>
+						<dd>
+							<input type="text" id="weixin" name="weixin" placeholder="请输入您的微信号" />
+						</dd>
+					</dl>
+                    <dl>
+						<dt>邮箱</dt>
+						<dd>
+							<input type="email" id="email" name="email" placeholder="请输入邮箱地址" /> 
+						</dd>
+					</dl>
+					<dl class="mt10">
+						<dt>订单备注</dt>
+					</dl>
+					<div style="height:auto;padding:0.5rem;border-bottom:1px solid #ddd;background-color:#fff;"><textarea class="textareastyle" placeholder="对本次交易的补充说明"></textarea></div>
+				</div>
+			</section>
+		</div>
+		<div class="footer-fixed">
+			<div class="total_of">
+				总计<span>c$<em>0.00</em></span>
+			</div>
+			<div class="comfirm">
+				<a href="javascript:history.go(-1);" class="btn-ok">去付款</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/picker.js" ></script>
+		<script type="text/javascript" src="js/select.js" ></script>
+		<script>
+			$("#ry").select({
+		        title: "在职人员",
+		        autoClose:true,
+		        
+		        items: ['1人','2人','3人'],
+		        onChange: function(d) {
+		        }
+		      });
+		      $("#tc").select({
+		        title: "套餐",
+		        autoClose:true,
+		        
+		        items: ['1天单元区门票','2天单元区门票','3天单元区门票'],
+		        onChange: function(d) {
+		        }
+		      });
+		</script>
+	</body>
+</html>

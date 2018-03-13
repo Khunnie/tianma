@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+		<style>
+			.order2-2b dl{border-bottom: none;}
+		</style>
+	</head>
+	<body>
+		<div class="global" style="padding-bottom: 6rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>修改密码</b></div>
+			    <div class="otherFun">
+			        <a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			    </div>
+			</div>
+			
+			<div class="title order2-tit">修改密码</div>
+			<section class="order2-2 whitesctbg">
+				<div class="order2-2b">
+					<dl><dt>旧密码</dt><dd><input type="text" id="Opw" class="inputstyle" placeholder="请输入初始密码" /></dd></dl>
+					<dl><dt>新密码</dt><dd><input type="password" id="Upw1" class="inputstyle" placeholder="请输入密码"></dd></dl>
+					<dl><dt>确认新密码</dt><dd><input type="password" id="Upw2" class="inputstyle" placeholder="请再次输入密码"></dd></dl>
+				</div>
+			</section>
+			<input id="hid_id" type="hidden" value="0" />
+			<div class="ok1 submit-two">
+				<a href="javascript:;" class="btn-ok submitButton" onclick="onrigs()">确定</a> 
+			</div>
+			<footer>
+				<div class="bottomMenu">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="ico-home"></i>
+                				<p>首页</p>
+            				</a>
+						</li>
+                        <li>
+							<a href="javascript:;" onclick="tel();">
+								<i class="ico-ask"></i>
+                				<p>联系我们</p>
+            				</a>
+						</li>
+						<li class="on">
+							<a href="#">
+								<i class="ico-personcenter"></i>
+                				<p>个人中心</p>
+            				</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+			
+	        function onrigs() {
+            var Opw = $.trim($("#Opw").val());
+            var pw1 = $.trim($("#Upw1").val());
+            var pw2 = $.trim($("#Upw2").val());
+
+            if (Opw.length < 6 || Opw.length > 20) {
+                $("#Opw").focus();
+                ShowMsg("请输入6-20位的有效旧密码");
+                return false;
+            }
+            if (pw1.length < 6 || pw1.length > 20) {
+                $("#Upw1").focus();
+                ShowMsg("请输入6-20位的有效新密码");
+                return false;
+            }
+            if (pw2.length < 6 || pw2.length > 20) {
+                $("#Upw2").focus();
+                ShowMsg("请输入6-20位的确认密码");
+                return false;
+            }
+            if (pw2 !== pw1) {
+                $("#Upw2").focus();
+                ShowMsg("两次密码不一致请重新输入");
+                return false;
+            }
+        }
+		</script>
+	</body>
+</html>

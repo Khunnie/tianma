@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+		<style>
+			.order2-2b{padding:0.5rem 0;}
+			.order2-2b dl{background-color:#fff;padding:0.5rem;}
+			.tit{padding:1rem 0.5rem 0.5rem;color:#999;border-bottom:1px solid #ddd;}
+		</style>
+	</head>
+	<body>
+		<div class="global" style="margin-bottom: 4rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>攻略详细</b></div>
+			    <div class="otherFun">
+			    	<a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			    </div>
+			</div>
+			<div class="strat-txt">
+				<h4>塞班岛 Saipan</h4>
+			</div>
+			<div class="strat-steps">
+				<section class="visa-content" style="display: block;">
+					<div class="appli-info">
+						<div class="ticket-img">
+							<img src="images/zs16.png" alt="" />
+						</div>
+						<p>国名美利坚众合国(United States of America)</p>
+						<p>位置</p>
+						<p>位于北美洲南部,北邻加拿大,南连墨西哥,东濒临大西洋,西临太平洋,而塞班岛位于西太平洋上,是北马里亚纳群岛中最大的岛人口3.25857亿,塞班岛则约5万人</p>
+						<p>面积</p>
+						<p>9.km,塞班岛则为120km</p>
+						<p>语言 英语</p>
+						<p>首都华盛顿(Wahhiton D.C)</p>
+						<p>历史文化</p>
+						<p>美国是世界最发达的资本主义国家,从1776年发表《独立宣言》起,经历了独立战争、内战、南北战争以及世界大战之后,其经济,文化,科技,军事和工业等处于全球领先地位.美国地理位置得天独厚,自然资源丰富,是其经济发达的根本条件之一</p>
+						<div class="ticket-img">
+							<img src="images/zs15.png" alt="" />
+						</div>
+					</div>
+				
+				</section>
+			</div>
+	
+			<div class="visa-steps">
+				<div class="visa-title">
+					<h3>旅者点评</h3>
+				</div>
+				<section class="visa-content">
+					<ul>
+					<li class="leave">
+						<img src="images/image.png" alt="" class="fl"/>
+						
+						<div class="fl leave-msg">
+							<p>棒棒棒棒</p>
+							<div>
+								<span class="the_name">test01</span>
+								<time>2015/12/11 12:00:24</time>
+							</div>
+							
+						</div>
+					</li>
+					
+				</ul>
+				<div class="stat">共有<span>0</span>访客发表了评论</div>
+				<div id="btn-msg" class="clearfix">
+					<textarea></textarea>
+					<div>
+						<label class="fl">
+							验证码:<input type="text" name="code" class="code" />
+							<a href="javascript:;">
+								<img src="images/none.png" alt="" class="code_img"/>看不清楚？
+							</a>
+						</label>
+						<input type="button" value="提交评论" class="fr btn-submit" />
+					</div>
+				</div>
+				</section>
+			</div>
+		</div>
+		<footer>
+				<div class="bottomMenu">
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ico-home"></i>
+                				<p>首页</p>
+            				</a>
+						</li>
+                        <li>
+							<a href="javascript:;" onclick="tel('24小时服务热线','0731-85012281');">
+								<i class="ico-ask"></i>
+                				<p>联系我们</p>
+            				</a>
+						</li>
+                        <li>
+							<a href="个人中心.html">
+								<i class="ico-personcenter"></i>
+                				<p>个人中心</p>
+            				</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script>
+			$(".visa-title").on("touchstart",function(){
+				var nextS = $(this).siblings("section");
+				if(nextS.is(":hidden")){
+					nextS.show();
+				}else{
+					nextS.hide();
+				}
+			})
+			/*所需材料*/
+			$(".nav-menu li").on("touchstart",function(){
+				$(this).addClass("current").siblings().removeClass("current");
+				var index = $(this).index();
+				 $(this).parents(".visa-content").find(".tab_box div").eq(index).show().siblings().hide();
+       		})
+
+		</script>
+	</body>
+</html>

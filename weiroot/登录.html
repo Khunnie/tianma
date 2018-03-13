@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html style="background-color: #fff;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+	</head>
+	<body style="background-color: #e4e5e5;">
+		<div class="global reg" style="min-height: 10rem;background-color: #e4e5e5;">
+			<div class="filter"></div>
+			<div class="login">
+				
+				<div class="img"><i class="ico-login"></i></div>
+				<div class="loginbox">
+					<ul>
+						<li class="us"><span><i class="ico-ico"></i></span><input type="text" id="username" class="userName" placeholder="邮箱帐号"></li>
+						<li class="pw"><span><i class="ico-pwd"></i></span><input type="password" id="userpw" class="userPw" placeholder="请输入密码"></li>
+					</ul>
+				</div>
+				<div class="login-ok">
+					<a class="btn-login-ok sumbitLogin" href="javascript:;"  onclick="UserLogin()">登录</a>
+				</div>
+				<div class="login-p">还不是网站会员？<a class="green1" href="#">马上注册>></a></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+			function UserLogin() {
+            var tmpUserName = $("#username").val()
+            var tmpUserPwd = $("#userpw").val();
+            if (!CheckPhoneNum(tmpUserName) && !CheckEmail(tmpUserName) && !CheckLoginName(tmpUserName)) {
+                $("#username").focus();
+                ShowMsg("请输入正确的用户名");
+                return false;
+            }
+            if (tmpUserPwd==""||tmpUserPwd.length < 0 || tmpUserPwd.length > 18) {
+                $("#userpw").focus();
+                ShowMsg("请输入正确的密码");
+                return false;
+            }
+            var url = "/Login.html?r=" + Math.random();
+            url += "&action=login";
+            url += "&callback=?";
+            $.getJSON(url, { "UserName": tmpUserName, "UserPwd": tmpUserPwd,"IsWrite":"1" }, function (data) {
+                if (parseInt(data.Result) == 1) {
+                     var rurl = "/member/";
+                     if (rurl.length > 0) {
+                         location.href = rurl;
+                     }
+                     else {
+                         location.href = "/";
+                     }
+
+                } else {
+                    ShowMsg(data.ErrorMsg);
+                }
+            });
+        }
+		</script>
+	</body>
+</html>

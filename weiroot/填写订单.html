@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+		<link rel="stylesheet" href="style/calendar.css">
+		<link rel="stylesheet" href="style/weui.css" />
+		<link rel="stylesheet" href="style/weui2.css"/>
+		<style>
+		.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li{background-color: #f8f8f8;}
+		.NGD_calendar_fullscreen .NGD_days_select{color: #d0d0d0;}
+		.NGD_calendar_fullscreen .NGD_days_selected_rang{color:#666;}
+		.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_rang{background-color: #fff;}
+		.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_ok{background-color:#e85b5b;color:#fff;}
+		.contentFilter{border-bottom:1px solid #ddd;background-color:#fff;padding:0.3rem 0.5rem 1rem 0.5rem;}
+		.contentFilter a{width:19%;margin-right: 1%;}
+		.contentFilter a:nth-child(3n) { width: 19%;margin-right: 1%; }
+		.contentFilter a:nth-child(5n) { margin-right: 0; width: 19%; }
+		.dayFilter a:last-child{width: 19%;}
+		.keyContent a {border: 1px solid #eee;background-color:#eee;padding: 0;margin-top:0.3rem;color: #333;font-size:0.7rem;line-height: 2rem;height: 2rem;		}
+		
+		.tit{padding:1rem 0.5rem 0.5rem;color:#999;border-bottom:1px solid #ddd;}
+		</style>
+	</head>
+	<body style="background: #f5f5f5;">
+		<div class="global" id="searchhotel" style="margin-bottom: 4rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>填写订单</b></div>
+			    <div class="otherFun">
+			    	<a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			        
+			    </div>
+			</div>
+	
+
+			<section class="order2-2 customer_box" style="padding-top:0;">
+				<div class="predeterTab">
+					<dl class="mt05 paramInfo">
+                  		<dt class="arrow"><a href="选择日期.html" alt="">已选日期:<span>2017年6月20日</span></a></dt>
+                  		 	 	
+                  	</dl>
+					<dl class="mt05 paramInfo">
+                  		<dt class="arrow"><a href="房间安排.html" alt="">房间安排</a></dt>
+                  		<dd >
+                  			<div>
+                  				<p>房间*1</p>
+                  			</div>
+                  			
+                  		</dd>
+                  	</dl>
+                  	
+                  	<dl class="mt05">
+						<dt class="arrow"><a href="出游人数.html" alt="">出游人数</a></dt>
+						<dd>
+							<div>
+								<p>成人*1</p>
+								<p>儿童*1</p>
+							</div>
+							
+						</dd>
+					</dl>
+                  	<dl class="mt05">
+                  		<dt class="arrow"><a href="上车地点.html" alt="">上车地点</a></dt>
+                  		<dd>
+                  			
+                  		</dd>
+                  	</dl>
+					<dl class="mt05">
+                  		<dt class="arrow"><a href="语种选择.html" alt="">语种选择</a></dt>
+                  		<dd>
+                  			
+                  		</dd>
+                  	</dl>
+					<dl class="mt05">
+						<dt>游客信息</dt><dd></dd>
+					</dl>
+					<div class="visito order2-2b">
+						<dl>
+							<dt>护照号码</dt><dd>
+	                        	<input type="text" alt="" placeholder="与护照一致" />
+	                        </dd>
+						</dl>
+						<dl>
+							<dt>中文名(拼音)</dt><dd>
+	                        	<input type="text" alt="" placeholder="与护照一致" />
+	                        </dd>
+						</dl>
+	                    <dl>
+	                    	<dt>中文姓(拼音)</dt><dd>
+	                        	<input type="text" alt="" placeholder="与护照一致"  />
+	                        </dd>
+	                    </dl>
+					</div>
+					 <dl class="mt05" id="service">
+						<dt>附加服务</dt><dd class="arrow">
+                        	
+                        </dd>
+					</dl>
+					<div class="fw-box order2-2b">
+						<div>
+							<dl class="insurance">
+							<dt>保险</dt>
+							<dd>保险名称1 
+								<span class="slct">
+									<input name="bx"  type="radio" class="rdostyle" value="" checked="checked"><i></i>
+								</span>
+							</dd>
+						</dl>
+						<div class="bxlist" style="display: block;">
+							<dl>
+								<dt></dt>
+								<dd class="colorGrey">套餐详细介绍</dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd class="Datetime">
+									<input type="text" id="startDate" name="startDate" class="startDate"  data= "" placeholder="开始时间"/>
+									<input type="text" id="endDate" name="endDate" class="endDate"  data= "" placeholder="结束时间" />
+								</dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd class="colorGrey">
+									<p><i class="colorRed">￥82</i>/份</p>
+									<label><input type="number" pattern="[0-9]*" class="Numpeople"/>/人</label>
+								</dd>
+							</dl>
+						</div>
+						</div>
+						<div>
+							<dl class="insurance">
+								<dt></dt>
+								<dd>保险名称2 
+									<span class="slct">
+										<input name="bx"  type="radio" class="rdostyle" value=""><i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="bxlist">
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">套餐详细介绍</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd class="Datetime">
+										<input type="text" id="startDate" name="startDate" class="startDate"  data= "" placeholder="开始时间"/>
+										<input type="text" id="endDate" name="endDate" class="endDate"  data= "" placeholder="结束时间" />
+									</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">
+										<p><i class="colorRed">￥82</i>/份</p>
+										<label><input type="number" pattern="[0-9]*" class="Numpeople"/>/人</label>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div>
+							<dl class="insurance">
+								<dt></dt>
+								<dd>保险名称3
+									<span class="slct">
+										<input name="bx"  type="radio" class="rdostyle" value=""><i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="bxlist">
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">套餐详细介绍</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd class="Datetime">
+										<input type="text" id="startDate" name="startDate" class="startDate"  data= "" placeholder="开始时间"/>
+										<input type="text" id="endDate" name="endDate" class="endDate"  data= "" placeholder="结束时间" />
+									</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">
+										<p><i class="colorRed">￥82</i>/份</p>
+										<label><input type="number" pattern="[0-9]*" class="Numpeople"/>/人</label>
+									</dd>
+								</dl>
+							</div>
+					
+						</div>
+						<!--电话卡-->
+						<div class="mt05">
+							<dl class="insurance">
+								<dt>电话卡</dt>
+								<dd>
+									<h4>美国/加拿大/墨西哥/中国通用4G</h4>
+									<span class="slct">
+										<input name="bx"  type="radio" class="rdostyle" value=""><i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="bxlist">
+								<dl>
+									<dt></dt>
+									<dd>
+										<input type="text" id="startDate" name="startDate" class="startDate"  data= "" placeholder="开始时间"/>
+									</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">
+										<p><i class="colorRed">￥82</i>/份</p>
+										<label><input type="number" pattern="[0-9]*" class="Numpeople"/>/人</label>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<!--WIFI-->
+						<div class="mt05">
+							<dl class="insurance">
+								<dt>WIFI</dt>
+								<dd>
+									<h4>美国/加拿大/墨西哥/中国通用4G</h4>
+									<span class="slct">
+										<input name="bx"  type="radio" class="rdostyle" value=""><i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="bxlist">
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">
+										<div class="weui_cell_bd weui_cell_primary">
+						                    <input class="weui_input" type="text" value="" id='xl' placeholder="机场自提"/>
+						               </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd>
+										<input type="text" id="startDate" name="startDate" class="startDate"  data= "" placeholder="开始时间"/>
+									</dd>
+								</dl>
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">
+										<p><i class="colorRed">￥82</i>/份</p>
+										<label><input type="number" pattern="[0-9]*" class="Numpeople"/>/人</label>
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<!--其他-->
+						<div class="mt05">
+							<dl class="insurance">
+								<dt>其他</dt>
+								<dd>
+									<h4>纽约市夜游</h4>
+									<span class="slct">
+										<input name="bx"  type="radio" class="rdostyle" value=""><i></i>
+									</span>
+								</dd>
+							</dl>
+							<div class="bxlist">
+							
+								<dl>
+									<dt></dt>
+									<dd class="colorGrey">
+										<p><i class="colorRed">￥82</i>/成人</p>
+										<p><i class="colorRed">￥82</i>/儿童</p>
+										<label><input type="number" pattern="[0-9]*" class="Numpeople"/>/人</label>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>	
+                    <dl class="mt10">
+						<dt>订购人信息</dt>
+					</dl>
+						<div class="visito order2-2b">
+	                    <dl>
+							<dt>姓名</dt><dd><input type="text" id="contacts" name="contacts" placeholder="请输入联系人姓名" /> </dd>
+						</dl>
+	                    <dl>
+							<dt>手机</dt><dd><input type="tel" id="phone" name="phone" placeholder="请输入联系人手机号码" /> </dd>
+						</dl>
+	                    <dl>
+							<dt>邮箱</dt><dd><input type="email" id="email" name="email" placeholder="请输入邮箱地址" /> </dd>
+						</dl>
+					</div>
+					<dl>
+						<dt>订单备注</dt>
+					</dl>
+					<div style="height:auto;padding:0.5rem;border-bottom:1px solid #ddd;background-color:#fff;"><textarea class="textareastyle" placeholder="对本次交易的补充说明" ></textarea></div>
+				</div>
+			</section>
+		</div>
+		<div class="footer-fixed">
+			<div class="total_of">
+				总计<span>c$<em>0.00</em></span>
+			</div>
+			<div class="comfirm">
+				<a href="支付方式.html" class="btn-ok">去支付</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/picker.js" ></script>
+		<script type="text/javascript" src="js/select.js" ></script>
+		<script type="text/javascript" src="js/NGD_calendar.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script>
+
+			$("#service").click(function(){
+				var next = $(this).siblings(".fw-box")
+				if(next.is(":hidden")){
+					next.show();
+				}else{
+					next.hide();
+				}
+			})
+			$(".insurance").click(function(){
+				var Input = $(this).find("input");
+				var Show = $(this).siblings(".bxlist")
+				if ($(Input).is(":checked")){
+		            $(Input).prop("checked", false);
+		            Show.hide()
+		        }
+		       else
+		        {
+		            $(Input).prop("checked", true);
+		            Show.show()
+		        }
+			})
+	       $("#xl").select({
+	        title: "机场自提",
+	        autoClose:true,
+	        
+	        items: ['机场自提','机场不自提'],
+	        onChange: function(d) {
+	        }
+	      });
+	    
+		</script>
+	</body>
+</html>

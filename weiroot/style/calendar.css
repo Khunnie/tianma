@@ -1,0 +1,138 @@
+/* CSS Document */
+header.cldar{ height:2.8rem; background:#fff; text-align:center;line-height:1.8rem; }
+header.cldar a{background-size:100% 100%;width: 1.8rem;height: 1.8rem;display:inline-block;margin-top:0.55rem;}
+header.cldar a.back{position:absolute;left:0.8rem;top:0;z-index:2;  background: url(../images/back2.png) no-repeat;background-size: 100%;float:left;}
+header.cldar h1{width:100%;font-size:1.2rem; font-weight:normal;font-weight:100;color:#e85b5b;}
+.pageconversion{background:none;}
+#calendar{min-height:395px;}
+.box_a{ border:1px solid #DCDCDE;}
+.box_a span{ display:inline-block; line-height:29px;}
+.box_a li{ font-size:29px;border-bottom:1px solid #DCDCDE; position:relative; clear:both; }
+.box_a li.P_13{ clear:none;}
+.box_a li.h90{ height:90px; overflow:hidden}
+.box_a li.bor{padding:29px 0 29px 23px;}
+.box_a li a{ display:block; color:#333; padding:29px 0 29px 23px; background:#fff}
+.box_a li a:active{ background:#ececec}
+.box_a li a:active input{background:#ececec}
+.box_a li a .a_01.big{ position:relative; top:3px;}
+.box_a li:last-child{border-bottom:none}
+.box_a li.none{ display:none}
+.box_a .input_a{ height:29px;  border:0px; border-left:1px solid #D0CFD1;  font-size:29px; display:inline-block; padding-top:5px; padding-bottom:5px; vertical-align:middle; }
+.box_a .input_b{ height:29px;  border:0px;   font-size:29px; display:inline-block; padding-top:5px; padding-bottom:5px; vertical-align:middle; padding-left:50px;  }
+.box_a .pad_t5{ position:relative;top:5px;}
+.box_a .input_a:active{background:#ececec}
+.box_a .btn_select{opacity:0}
+.box_a .btn_select select{width:100%; height:90px; position:absolute;top:0px; font-size:30px;}
+.box_a .btn_select select option{ padding-left:20px; text-align:center}
+.Title{font-size:29px; padding-left:5px;}
+.box_a .font40{ font-size:40px;}
+.bor_dashed{border:1px dashed #d3d2d4;}
+.bor_dashed li{border-bottm:1px dashed #d3d2d4;}
+.box_a li a .pri{margin-left:65px;font-weight:normal;}
+.box_a li a .true{position:absolute;top:50%;right:22px;margin-top:-20px;}
+.box_a li a .text{line-height:60px;font-weight:normal;}
+.box_a textarea {font-size:28px;color:#a0a0a0;border:0px;width:100%;overflow:hidden;height:107px}
+.box_a .text_box{margin:0px 23px 0px 0px;padding:25px;border:1px solid #d7d7d9;display:block}
+.box_a .data_type{-webkit-appearance:none;outline:none;-o-appearance:none;-moz-appearance:none; width:60%}
+
+.NGD_calendar_box,.NGD_calendar_box ul,.NGD_calendar_box li {padding:0;margin:0;list-style:none;font-family:"Microsoft YaHei";}
+.NGD_calendar_box,.NGD_calendar_box ul,.NGD_calendar_box div,.NGD_calendar_box li{zoom:1;}
+.NGD_calendar_box:after,.NGD_calendar_box ul:after,.NGD_calendar_box div:after,.NGD_calendar_box li:after{content:".";clear:both;height:0;line-height:0;font-size:0;display:block;overflow:hidden;visibility:hidden;}
+
+.NGD_calendar_box {position:relative;width:210px;background:#eee;padding:10px;display:none;}
+.NGD_tag {position:relative;width:100%;height:2.5rem;line-height:2.5rem;font-size:1rem;color:#fff;text-align:center;background:#7644C9;overflow:hidden;}
+.NGD_calendar_box .left,.NGD_calendar_box .right {position:absolute;_position:relative;z-index:10000;top:12px;width:18px;height:16px;line-height:16px;text-align:center;font-family:"SimSun";font-weight:bold;color:#c6c5c6;display:none;}
+.NGD_calendar_box .prevMonth {left:35px;_left:0;}
+.NGD_calendar_box .nextMonth {right:35px;_right:0;}
+.NGD_calendar_box .prevYear {left:15px;_left:0;}
+.NGD_calendar_box .nextYear {right:15px;_right:0;}
+.NGD_calendar_box .left:hover,.NGD_calendar_box .right:hover {text-decoration:none;color:#36bae8;}
+.NGD_month_line {float:left;width:1px;height:240px;background:#000;margin:0 10px;overflow:hidden;}
+.NGD_month_box {float:left;width:210px;_padding-top:30px;}
+.NGD_days {}
+.NGD_days ul li {float:left;width:30px;height:30px;line-height:0.5rem;font-size:0.8rem;text-align:center;overflow:hidden;cursor:default;}
+.NGD_days ul.NGD_days_list{margin:0 0 10px;}
+.NGD_days ul.NGD_days_list li {}
+
+/*.NGD_days_disbled {color:#ccc;}*/
+/*.NGD_days_select:hover {background:#ddd;}*/
+/*.NGD_days_selected {color:#fff;background:#7644C9;}*/
+
+.NGD_calendar_fullscreen {position:absolute;z-index:10000;left:0;top:0;width:100%;background:#fff;font-size:24px;overflow:hidden;color:#ccc;}
+.NGD_calendar_fullscreen .NGD_calendar_box {width:auto;background:none;padding:0;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box {width:100%;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li {position:relative;width:14.28%;height:3.5rem;line-height:1.2rem;border:1px solid #f2f2f2;overflow:visible;font-weight: bold;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_between {color:#fff;background-size:1.4rem 1.4rem;background:#24be69;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li .dangerousDate {position:absolute;left:51%;z-index:1;bottom:2px;height: 1rem;color: #7644c9;font-size: 0.6rem;line-height: 0.6rem;margin-left: -2px;display: block;width: 100%;text-align: center;width:5px;height:5px; background: #7644c9; border-radius:4px; }
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_start,.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_end {color:#fff;background:#009342;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_select:hover {background:1none;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul .rowline {float:left;width:100%;height:1px;background:#e0e0e2;margin:5px 0;overflow:hidden;}
+.NGD_calendar_fullscreen .NGD_month_line {display:none;}
+.NGD_calendar_fullscreen .NGD_tag {color:#000;background:#f1f1f1;border-bottom:1px solid #e0e0e2;border-top: 1px solid #e0e0e2;}
+.NGD_calendar_fullscreen .NGD_days_tag {display:none;}
+
+.NGD_calendar_fullscreen .tag_week {height:2.5rem;font-family:"Microsoft YaHei";/*border-bottom:1px solid #f2f2f2;*/background:#fff;border-top:1px solid #f2f2f2;padding:0;margin:0;overflow:hidden;}
+.NGD_calendar_fullscreen .tag_week li {float:left;width:14.2%;height:2.5rem;line-height:2.5rem;font-size:0.8rem;color:#666;text-align:center;list-style:none;overflow:hidden;}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_calendar_dangerous {color:#fff;}
+
+
+.visa_form{ background:#F1F0F2}
+.visa_form .tips{padding:20px;}
+.visa_form .tips i{vertical-align:middle;margin-right:15px;}
+.visa_form .them01 a sub{ float:right; margin-right:20px;}
+.w330{ width:330px;}
+
+.NGD_calendar_fullscreen {position:relative;}
+.NGD_calendar_box {display:block;}
+
+
+
+// page3
+.NGD_calendar_fullscreen_add {position:absolute;z-index:10000;left:0;top:0;width:100%;background:#fff;font-size:24px;overflow:hidden;color:#000;}
+.NGD_calendar_fullscreen_add .NGD_calendar_box {width:auto;background:none;padding:0;}
+.NGD_calendar_fullscreen_add .NGD_calendar_box .NGD_month_box {width:100%;}
+.NGD_calendar_fullscreen_add .NGD_calendar_box .NGD_month_box .NGD_days ul li {position:relative;width:14.2%;height:2.65rem;line-height:1.3rem;border-bottom:1px solid #f2f2f2;overflow:visible;}
+.NGD_calendar_fullscreen_add .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_calendar_dangerous {color:#fff;background-size:1.4rem 1.4rem;background:#24be69;}
+.NGD_calendar_fullscreen_add .NGD_calendar_box .NGD_month_box .NGD_days ul li .dangerousDate {position:absolute;left:51%;z-index:1;bottom:2px;height: 1rem;color: #7644c9;font-size: 0.6rem;line-height: 0.6rem;margin-left: -2px;display: block;width: 100%;text-align: center;width:5px;height:5px; background: #7644c9; border-radius:4px; }
+.NGD_calendar_fullscreen_add .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_calendar_selected {color:#fff;background:#009342;}
+
+.NGD_calendar_fullscreen_add .NGD_calendar_box .NGD_month_box .NGD_days ul .rowline {float:left;width:100%;height:1px;background:#e0e0e2;margin:5px 0;overflow:hidden;}
+.NGD_calendar_fullscreen_add .NGD_month_line {display:none;}
+.NGD_calendar_fullscreen_add .NGD_tag {color:#000;background:#f1f1f1;border-bottom:1px solid #e0e0e2;border-top: 1px solid #e0e0e2;}
+.NGD_calendar_fullscreen_add .NGD_days_tag {display:none;}
+
+.NGD_calendar_fullscreen_add .tag_week {height:1.9rem;font-family:"Microsoft YaHei";/*border-bottom:1px solid #f2f2f2;*/background:#fff;border-top:1px solid #f2f2f2;padding:0;margin:0;overflow:hidden;}
+.NGD_calendar_fullscreen_add .tag_week li {float:left;width:14.2%;height:1.9rem;line-height:1.9rem;font-size:0.65rem;color:#666;text-align:center;list-style:none;overflow:hidden;}
+
+/*结构*/
+.NGD_days ul.NGD_days_list li em.on_price{display:block;position: absolute;left:0;top:1.2rem;width:100%;font-size:0.8rem;height: 1rem;line-height: 1rem;color:#f22;text-align: center;}
+.NGD_days ul.NGD_days_list li em.on_price_2{display:block;position: absolute;left:0;top:1.1rem;width:100%;font-size:0.5rem;height: 0.6rem;line-height: 0.6rem;color:#ffff00;text-align: center;}
+.NGD_days ul.NGD_days_list li em.on_days{display:block;position: absolute;left:0;top:2.3rem;width:100%;font-size:0.5rem;height: 0.6rem;line-height: 0.6rem;color:#666;text-align: center;}
+.NGD_days ul.NGD_days_list li em.on_days_2{display:block;position: absolute;left:0;top:1.85rem;width:100%;font-size:0.5rem;height: 0.6rem;line-height: 0.6rem;color:#fff;text-align: center;}
+.NGD_days ul.NGD_days_list li em.gone{display:block;position: absolute;left:0;top:1.85rem;width:100%;font-size:0.5rem;height: 0.6rem;line-height: 0.6rem;color:#666;text-align: center;}
+.NGD_days ul.NGD_days_list li.NGD_days_select_preferential {color:#666;}
+.NGD_days ul.NGD_days_list li.NGD_days_select_okDate {color:#fff;background:#24be69;}
+.NGD_days ul.NGD_days_list li.NGD_days_select_gone {color:#666;}
+
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_ok{
+    color: #fff;
+    background: #e85b5b;
+}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_ok .on_price{
+    color: #ffff00;
+}
+.NGD_calendar_fullscreen .NGD_calendar_box .NGD_month_box .NGD_days ul li.NGD_days_selected_ok .on_days{
+    color: #fff;
+}
+.NGD_calendar_box, .NGD_calendar_box ul, .NGD_calendar_box li .calday{height: 1rem;
+}
+.NGD_calendar_box, .NGD_calendar_box ul, .NGD_calendar_box li .calprice{
+	color: #ff9400;font-size: 0.75rem;display: block;height: 1rem;
+}
+.NGD_calendar_box, .NGD_calendar_box ul, .NGD_calendar_box li .cainfo{color: #666;display: block;font-size: 0.85rem;font-weight: normal;height: 1.2rem;}
+.NGD_calendar_box .this{line-height: 1.5rem;}
+
+// NGD_days_select NGD_days_select_preferential
+
+
+

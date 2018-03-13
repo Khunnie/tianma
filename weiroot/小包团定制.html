@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+		<link rel="stylesheet" href="style/icon.css" />
+		<link rel="stylesheet" href="style/weui.css" />
+		<link rel="stylesheet" href="style/weui2.css"/>
+		<style>
+		
+		.contentFilter{border-bottom:1px solid #ddd;background-color:#fff;padding:0.3rem 0.5rem 1rem 0.5rem;}
+		.contentFilter a{width:19%;margin-right: 1%;}
+		.contentFilter a:nth-child(3n) { width: 19%;margin-right: 1%; }
+		.contentFilter a:nth-child(5n) { margin-right: 0; width: 19%; }
+		.dayFilter a:last-child{width: 19%;}
+		.keyContent a {border: 1px solid #eee;background-color:#eee;padding: 0;margin-top:0.3rem;color: #333;font-size:0.7rem;line-height: 2rem;height: 2rem;		}
+		.order2-2b{padding:0.5rem 0;}
+		.order2-2b dl{background-color:#fff;padding:0.5rem;}
+		.tit{padding:1rem 0.5rem 0.5rem;color:#999;border-bottom:1px solid #ddd;}
+		.search-hotel-block.order2-2b dl dd input{width:100%;}
+		</style>
+	</head>
+	<body style="background: #ededed;">
+		<div class="global" id="searchhotel">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>小包团定制</b></div>
+			    <div class="otherFun">
+			    	<a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			        
+			    </div>
+			</div>
+			<section class="order2-2 customer_box" style="padding-top:0;">
+				<div class="search-hotel-block order2-2b">
+					<dl class="mb05">
+						<dt>出发时间</dt><dd class="arrow"><input type="text" id="date" name="startDate" class="startDate" placeholder="请选择出发日期" data= "" /></dd>
+					</dl>
+					<dl class="mb05">
+						<dt>行程天数</dt>
+						<dd class="arrow">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='ts'/>
+			                </div>
+						</dd>
+					</dl>
+					<dl class="mb05">
+						<dt>定制人数</dt>
+						<dd class="num-list">
+							<div class="people">
+								<span>成人</span>
+								<div>
+									
+			                    <input class="weui_input" type="number" pattern="[0-9]*" value="" placeholder="请输入人数"/>
+			          
+								</div>
+							</div>
+							<div class="people">
+								<span>儿童</span>
+								<div>
+									
+			                    <input class="weui_input" type="number" pattern="[0-9]*" value="" placeholder="请输入人数"/>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="mb05">
+						<dt>选择区域</dt>
+						<dd class="arrow">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='qy'/>
+			               </div>
+						</dd>
+					</dl>
+					<dl id="sr-des-slc">
+						<dt>选择目的地</dt>
+						<dd class="arrow">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='mdd'/>
+			                </div>
+						</dd>
+					</dl>
+					<dl class="mt05">
+                  		<dt>机场接送</dt>
+                  		<dd class="arrow">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='js'/>
+			               </div>
+                  		</dd>
+                  	</dl>
+                    <dl class="mt05"> 
+						<dt>开始结束</dt>
+						<dd class="city">
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='ks' placeholder="请输入开始城市"/>
+			                </div>
+							<i>-</i>
+							<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='js' placeholder="请输入结束城市"/>
+			                </div>
+						</dd>
+					</dl>
+                    <dl class="mt10">
+						<dt>定制需求</dt><dd>司机兼导游</dd>
+					</dl>
+                    <dl class="mt05">
+						<dt>酒店</dt><dd class="arrow">
+                        	<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='jd' placeholder="选择酒店"/>
+			               </div>
+                        </dd>
+					</dl>
+                   
+                    <dl>
+						<dt></dt><dd class="arrow">
+                        	<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='xj' placeholder="请选择星级"/>
+			               </div>
+                        </dd>
+					</dl>
+                    <dl>
+						<dt></dt><dd class="arrow">
+                        	<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='fx' placeholder="请选择房型"/>
+			               </div>
+                        </dd>
+					</dl>
+					 <dl>
+						<dd class="arrow">
+                        	<div class="weui_cell_bd weui_cell_primary">
+			                    <input class="weui_input" type="text" value="" id='sl' placeholder="请选择数量"/>
+			               </div>
+                        </dd>
+					</dl>
+                  
+                    <dl class="mt10">
+						<dt>联系方式</dt>
+					</dl>
+                    <dl>
+						<dt>姓名</dt><dd><input type="text" id="contacts" name="contacts" placeholder="请输入联系人姓名" /> </dd>
+					</dl>
+                    <dl>
+						<dt>手机</dt><dd><input type="tel" id="phone" name="phone" placeholder="请输入联系人手机号码" /> </dd>
+					</dl>
+					 <dl>
+						<dt>微信号</dt><dd><input type="text" id="weixin" name="weixin" placeholder="请输入您的微信号" /> </dd>
+					</dl>
+                    <dl>
+						<dt>邮箱</dt><dd><input type="email" id="email" name="email" placeholder="请输入邮箱地址" /> </dd>
+					</dl>
+					<dl>
+						<dt>订单备注</dt>
+					</dl>
+					<div style="height:auto;padding:0.5rem;border-bottom:1px solid #ddd;background-color:#fff;"><textarea class="textareastyle" ></textarea></div>
+				</div>
+			</section>
+			
+			<div class="ok submit-two btn_wrap">
+				<a href="定制成功.html" class="btn-ok submitButton" id="submit_form">确定</a> 
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/picker.js" ></script>
+		<script type="text/javascript" src="js/select.js" ></script>
+		<script>
+		$("#date").datetimePicker({title:"选择日期",m:1});
+		$("#ts").select({
+	        title: "行程天数",
+	        autoClose:true,
+	        
+	        items: ['1天','2天','3天'],
+	        onChange: function(d) {
+	        }
+	      });
+	      $("#qy").select({
+	        title: "选择区域",
+	        autoClose:true,
+	        
+	        items: ['南美','北美'],
+	        onChange: function(d) {
+	        }
+	      });
+	      $("#mdd").select({
+	        title: "选择目的地",
+	        autoClose:true,
+	        
+	        items: ['澳大利亚','巴黎'],
+	        onChange: function(d) {
+	        }
+	      });
+	      $("#js").select({
+	        title: "机场接送",
+	        autoClose:true,
+	        
+	        items: ['需要','不需要'],
+	        onChange: function(d) {
+	        }
+	      });
+	      $("#jd").select({
+	        title: "请选择酒店",
+	        autoClose:true,
+	        
+	        items: ['大酒店','小酒店'],
+	        onChange: function(d) {
+	        }
+	      });
+	      $("#xj").select({
+	        title: "请选择星级",
+	        autoClose:true,
+	        
+	        items: ['五星级','四星级','三星级'],
+	        onChange: function(d) {
+	        }
+	      });
+	      $("#fx").select({
+	        title: "请选择房型",
+	        autoClose:true,
+	        
+	        items: ['豪华套间','大床房','双人间'],
+	        onChange: function(d) {
+	        }
+	      });
+	       $("#sl").select({
+	        title: "请选择数量",
+	        autoClose:true,
+	        
+	        items: ['1','2','3','4','5'],
+	        onChange: function(d) {
+	        }
+	      });
+	
+		</script>
+	</body>
+</html>

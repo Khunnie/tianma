@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+	</head>
+	<body style="background: #eee;">
+		<div class="global order2" style="padding-bottom: 5rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>订单信息</b></div>
+			    <div class="otherFun">
+			        <a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			    </div>
+			</div>
+			
+			<div class="title order2-tit">产品信息</div>
+			<section class="order2-1 whitesctbg">
+				<div class="clearfix">
+					<div class="img fl"><img src="images/zt3.jpg" /></div>
+					<div class="tit fr">
+						<p class="gz">【春节】神农架滑雪双动2日游</p>
+						<div class="info_bottom clearfix">
+							<div class="list3_money">总计:<em>c$1800</em></div>
+							<div lang="" class="list3_status">已付款</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order2-2 customer_box" style="padding-top:0; margin-bottom: 0;">
+				<div class="order2-2b order-info">
+					<dl>
+						<dt>订单编号:</dt>
+						<dd>2017051700387</dd>
+					</dl>
+					<dl>
+						<dt>出游日期:</dt>
+						<dd>2017.11.1</dd>
+					</dl>
+					<dl>
+						<dt>出游人数:</dt>
+						<dd>2间房</dd>
+					</dl>
+					<dl class="room-info">
+						<dt>房间1:</dt>
+						<dd>双人标准间,Queen,1成人1儿童</dd>
+					</dl>
+					<dl>
+						<dt>上车地点:</dt>
+						<dd>地点1</dd>
+					</dl>
+					<dl>
+						<dt>语种选择:</dt>
+						<dd>中文服务</dd>
+					</dl>
+					<dl>
+						<dt>游客信息:</dt>
+						
+					</dl>
+					<dl class="room-info">
+						<dt>房间1:</dt>
+						<dd>
+							<p>张先生,护照编号201705136554</p>
+							<p>张先生,护照编号201705136554</p>
+						</dd>
+						<dt>房间2:</dt>
+						<dd>
+							<p>张先生,护照编号201705136554</p>
+							<p>张先生,护照编号201705136554</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>附加服务:</dt>
+						<dd></dd>
+					</dl>
+					<dl class="room-info">
+						<dt>保险:</dt>
+						<dd>
+							<p>利宝保险国际旅行保障计划<a href="javascript:;"class="look-more">[查看详情]</a></p>
+							<p>套餐1,2017-05-17—2017-05-21，2份</p>
+						</dd>
+						<dt>电话卡:</dt>
+						<dd>
+							<p>美国/加拿大/墨西哥/中国通用4G手机上网电话卡,7天,2017-05-17,2份</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>备注:</dt>
+						<dd>花生过敏</dd>
+					</dl>
+				</div>
+			</section>
+			<div class="title order2-tit">联系人信息</div>
+			<section class="order2-2 whitesctbg">
+				<div class="order2-2b" style="padding:0;">
+					<dl><dt>姓名</dt><dd>张三</dd></dl>
+					<dl><dt>手机</dt><dd>13356985236</dd></dl>
+					<dl style="border-bottom: none;"><dt>电子邮箱</dt><dd>abc@abc.com</dd></dl>
+				</div>
+			</section>
+            <footer>
+				<div class="bottomMenu">
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ico-home"></i>
+                				<p>首页</p>
+            				</a>
+						</li>
+                        <li>
+							<a href="#">
+								<i class="ico-ask"></i>
+                				<p>联系我们</p>
+            				</a>
+						</li>
+						<li class="on">
+							<a href="#">
+								<i class="ico-personcenter"></i>
+                				<p>个人中心</p>
+            				</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+            
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script>
+			$(".provision span").click(function(){
+				$(".fixprovision").show();
+				$(".order2").hide();
+			})
+			$(".provision em").click(function(){
+				$(this).toggleClass("on");
+			})
+			$("a",$(".fixprovision .toback")).unbind("click").click(function(){
+				$(".fixprovision").hide();
+				$(".order2").show();
+			})
+			$("a",$(".fixprovision .ok1")).unbind("click").click(function(){
+				$(".fixprovision").hide();
+				$(".order2").show();
+				$(".provision em").removeClass("on").addClass("on");
+			})
+			var o = $(".list3_status");
+            o.each(function () {
+                var ostatus = $(this).text();
+                switch (ostatus) {
+                    case "已付款":
+                        $(this).css("background", "#00a388");
+                        break;
+                    case "未付款":
+                        $(this).css("background", "#ff6f69");
+                        break;
+                    case "已取消":
+                        $(this).css("background", "#bcbcbc");
+                        break;
+                }
+            })
+        
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html style="background-color: #fff;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+	</head>
+	<body style="background-color: #e4e5e5;">
+		<div class="global reg" style="min-height: 10rem;background-color: #e4e5e5;">
+			<div class="filter"></div>
+			<div class="login">
+				<div class="img"><i class="ico-login"></i></div>
+				<div class="loginbox">
+					<ul>
+						<li class="us"><span><i class="ico-ico"></i></span><input type="text" id="Uname" class="userName" placeholder="手机号/邮箱" onblur="onmesage()"></li>
+						<li class="pw"><span><i class="ico-pwd"></i></span><input type="password" id="Upw1" class="userPw" placeholder="请输入密码"></li>
+						<li class="repw"><span><i class="ico-repwd"></i></span><input type="password" id="Upw2" class="userPw" placeholder="请再次输入密码"></li>
+					</ul>
+				</div>
+				<div class="provision" style="padding:1rem;"><em class="on"></em><span>我愿意接受网站服务条款</span></div>
+				<div class="login-ok sigin-ok">
+					<a class="btn-login-ok sumbitLogin" onclick="onrigs()" href="javascript:;">注册</a>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+			$(".clickview").click(function(){
+				$(".fixprovision").show();
+				$(".reg").hide();
+			})
+			$(".provision em").click(function(){
+				$(this).toggleClass("on");
+			})
+			$("a",$(".fixprovision .toback")).unbind("click").click(function(){
+				$(".fixprovision").hide();
+				$(".reg").show();
+			})
+			$("a",$(".fixprovision .ok1")).unbind("click").click(function(){
+				$(".fixprovision").hide();
+				$(".reg").show();
+				$(".provision em").removeClass("on").addClass("on");
+			})
+			
+			function onmesage() {
+            var url = "Reg.html?action=checkishave&";
+            var tt = $.trim($("#Uname").val());
+            if (CheckPhoneNum(tt) || CheckEmail(tt)) {
+                var length = tt.length;
+                if (length > 5) {
+                    var stat = tt.substring(0, 3);
+                    var end = tt.substr(length - 3, 3);
+                }
+                $.post(encodeURI(url), { "Tname": $("#Uname").val(), "R": Math.random() }, function (json) {
+                    if (!json.ret) {
+                        ShowMsg(json.msg);
+                        $("#Uname").val("")
+                    }
+                }, "json");
+            }
+            else {
+                ShowMsg("请输入正确的手机号");
+                $("#Uname").val("")
+            }
+        }
+        
+        function onrigs() {
+            var tt = $.trim($("#Uname").val());
+            var pw1 = $.trim($("#Upw1").val());
+            var pw2 = $.trim($("#Upw2").val());
+
+            if (!CheckPhoneNum(tt)) {
+                $("#Uname").focus();
+                ShowMsg("请输入正确手机号");
+                return false;
+            }
+            if (pw1.length < 6 || pw1.length > 20) {
+                $("#Upw1").focus();
+                ShowMsg("请输入6-位的有效密码");
+                return false;
+            }
+            if (pw2.length < 6 || pw2.length > 20) {
+                $("#Upw2").focus();
+                ShowMsg("请输入6-位的有效密码");
+                return false;
+            }
+            if (pw2 !== pw1) {
+                $("#Upw2").focus();
+                ShowMsg("两次密码不一致请重新输入");
+                return false;
+            }
+            if (!$(".provision em").is(".on")) {
+                ShowMsg("请同意网站服务条款");
+                return false;
+            }
+            var url = "Reg.html?action=ADD&";
+            $.post(url, { "name": $.trim(tt), "pw": $.trim(pw1), r: Math.random() }, function (json) {
+                if (!json.ret) {//1
+                    ShowMsg(json.msg);
+                }
+                else {//0
+                    ShowMsg(json.msg);
+                    setTimeout(function () {
+                        window.location.href = "Login.html";
+                    }, 2000);
+                }
+            }, "json");
+        }
+        
+		</script>
+	</body>
+</html>

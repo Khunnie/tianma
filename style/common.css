@@ -1,0 +1,222 @@
+@charset "utf-8";
+.refers{margin-top: 20px;margin-bottom: 30px;}
+.sea-nav { background-color: #fff; margin-top: 20px; margin-bottom: 20px; padding: 10px 0; border: 1px solid #e5e5e5; }
+.sea-nav-m { background: #fff; margin: 0 20px; }
+.sea-nav .row { border-bottom: 1px #e4e4e6 solid; position: relative; padding: 10px 0 0; }
+.sea-nav .sea-nav-m:last-child .row { border-bottom-width: 0; }
+.sea-nav .row-l { position: absolute; width: 100px; line-height: 27px; color: #313439; left: 0; top: 10px; }
+.sea-nav .row-r { position: absolute; width:80px; right: 0; height: 42px; overflow: hidden;}
+.sea-nav .row-m { padding: 0 75px 0 100px; overflow: hidden; }
+.sea-nav .row-m a { line-height: 25px; float: left; margin-right: 15px; display: block; padding: 0 10px; margin-bottom: 10px; }
+.sea-nav .row-m a.on { color: #fff; background-color: #36BAE8; border-radius: 100px; }
+.sea-nav .row-m a:hover { color: #36BAE8; text-decoration: underline }
+.sea-nav .row-r .nav-link { display: block; width: 70px; -webkit-border-radius: 2px; border-radius: 2px;padding-left: 5px; margin-top: 3px; cursor: pointer; color: #5ec5eb;}
+.sea-nav .row-r .nav-link i { width: 7px; height: 4px; display: block; background: url(../images/row-list-sj.png) no-repeat; margin: 9px 0 0 4px; -webkit-transition: all .2s; transition: all .2s; float: right;}
+.sea-nav .row-r.on .nav-link i { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+.sea-nav .fico { width: 20px; height: 20px; display: inline-block; vertical-align: middle; background-image: url(../images/icons.png); margin-right: 5px; margin-left: 2px; }
+.sea-nav .fico.fico1 { background-position: -100px -80px; }
+.sea-nav .fico.fico2 { background-position: -100px -100px; }
+.sea-nav .fico.fico3 { background-position: -100px -120px; }
+.DateSelect { margin: 0 0 0 20px; display: inline-block; }
+.DateSelect .J_calendar { border: 1px solid #ddd; border-radius: 4px; width: 135px; height: 25px; vertical-align: middle; text-indent: 6px; padding: 0; }
+.DateSelect .querydate { background: #fff; color: #36BAE8; border: 1px solid #36BAE8; padding: 3px 28px; border-radius: 4px; vertical-align: middle; margin-left: 5px; }
+.DateSelect .querydate:hover { background-color: #36BAE8; color: #fff; }
+/*排序*/
+.navsbar{margin-bottom: 20px;border: 1px solid #e4e4e4;background: #faf9f9;height: 44px;}
+.bar-tit{height: 42px;background: #fff;border: 1px solid #e5e5e5;margin-bottom: 17px;}
+.sort { height: 44px; }
+.sort li { padding: 0 22px; float: left; cursor: pointer }
+.sort li b { color: #313439; line-height: 44px; font-weight: normal; }
+.sort ul { float: left }
+.sort li.hover b { color: #F55415 }
+.sort ul li { position: relative }
+.PriceHigh, .PriceLow { position: absolute; right: 6px; width: 1px; display: block }
+.PriceHigh { top: 14px; border: 4px solid #adadad; border-color: transparent transparent #adadad }
+.PriceLow { top: 24px; border: 4px solid #adadad; border-color: #adadad transparent transparent }
+.PriceHigh.on { top: 14px; border-color: transparent transparent #F55415!important }
+.PriceLow.on { top: 24px; border-color: #F55415 transparent transparent!important }
+.arrow-left { display: block; border-top: 3px solid transparent; border-bottom: 3px solid transparent; border-right: 6px solid #999; border-left: 0 dotted; }
+.arrow-right { display: block; border-top: 3px solid transparent; border-bottom: 3px solid transparent; border-left: 6px solid #999; border-right: 0 dotted; }
+.navpage em .arrow-left { border-right-color: #d7d7d7; }
+.navpage em .arrow-right { border-left-color: #d7d7d7; }
+.navpage { line-height: 44px; padding-right: 20px; color: #666; }
+.navpage em, .navpage a { display: inline-block; padding: 5px 12px; border: 1px solid #e4e4e4; background: #fff; vertical-align: middle; margin: -2px 8px 0; }
+.navpage em { border-color: #e4e4e4; background: #f2f2f2; }
+.navpage .fn { color: #36BAE8; margin: 0 4px; font-weight: normal; }
+.tourlines {margin-right: -14px;}
+.tour-item,.tick-item{width: 384px; height:319px; background-color: #fff; position: relative; margin-bottom: 20px; transition: all .5s ease; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); margin-right: 14px;float: left;}
+.tour-item:hover ,.tick-item:hover{ box-shadow: 0 0 15px rgba(0,0,0,.3); -webkit-transform: translate3d(0, -3px, 0); transform: translate3d(0, -3px, 0); }
+.item-img{width: 100%;height: 260px;}
+.item-img img, .tick-item img{width: 100%;height:100%;}
+.item-left .tip{position: absolute;top: -5px;left: 10px;width: 53px;height: 64px;background: url(../images/hot-bg.png);font-size: 13px;color: #fff;padding-left: 10px;line-height: 100%;font-weight: bold; z-index: 1;}
+.item-left .tip span {display: block;font-size: 14px;margin: 16px 0 4px 0;font-weight: normal;}
+.item-left .tip span em{font-size: 20px;font-weight: bold;margin-right: 2px;}
+.item-img h3{position: absolute;left:30px;top: 10%;font-size: 26px;color: #fff;}
+.item-img span{position: absolute;left: 30px;top:21%;font-size: 12px;color: #fff;}
+.item-bottom{height: 59px;line-height: 59px;padding: 0 13px;}
+.item-bottom .fl a{color: #313439;}
+.item-bottom .fr{color: #666;}
+.tickets{width: 900px;}
+.hotlines {border: 3px solid #36BAE8;position: relative;margin-bottom: 20px;}
+.hotlines .hot-tag {position: absolute;right: -8px;top: -8px;width: 108px;height: 108px;background: url(../images/hot-tag.png);z-index: 9;}
+.hotlines .hot-list {overflow: hidden;}
+.tickets .tick-item{height: 247px;width: 100%;}
+.hotlines .tick-item:last-child {margin-bottom: 0;}
+.tick-item .item-left {width: 370px;height: 247px;position: absolute;left: 0;top: 0;}
+.tick-item .item-right{padding: 20px; margin-left: 370px;position: relative;}
+.tick-item .item-right-wrap{width: 340px;}
+.tick-item .item-right .item-right-wrap .name {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+.tags {margin-top: 10px; margin-bottom: 5px;}
+.tag-span {display: inline-block;float: none;vertical-align: top;line-height: 16px;font-size: 12px;color: #fff;padding: 0 5px;margin-bottom: 5px;font-weight: normal;border-radius: 2px;position: relative;border: 1px solid #2bb9eb;color: #2bb9eb;cursor: pointer;text-transform: uppercase;margin-right: 5px;}
+.tick-item .item-right .item-right-wrap .name a:hover {color: #1b9ecc;text-decoration: underline;}
+.tag-orang {background-color: #ff5500; border: 1px solid #ff5500;color: #fff}
+.tick-item .item-right .item-right-wrap .disc {font-size: 12px;color: #999;}
+.tick-item .item-right .item-right-wrap .disc p{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.tick-item .item-right .item-right-wrap .disc p:after{content: "...";}
+.tick-item .item-right .price {font-size: 12px;color: #666; position: absolute;right: 20px;top: 100px;}
+.tick-item .item-right .price span {color: #f4542a;}
+.tick-item .item-right .price span em {font-size: 24px;margin: 0 3px;}
+.relatedtour { width: 235px; background-color: #fff; border: 1px solid #e0dfdf; padding: 12px; }
+.relatedtour .relatedtour-tit { font-size: 16px; color: #313439; border-bottom: 1px dotted #aaa; padding-bottom: 5px; }
+.relatedtour li { padding: 10px 0 5px; border-bottom: 1px dotted #ccc; transition: all .5s ease; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.relatedtour li:hover { -webkit-transform: scale(1.02); transform: scale(1.02); -webkit-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0); }
+.relatedtour li:last-child { border-bottom-width: 0; }
+.relatedtour li .img { width: 235px; height: 157px; overflow: hidden; }
+.relatedtour li .img img { width: 100%; }
+.relatedtour li .name { margin: 5px 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.relatedtour li .name a { color: #313439; font-size: 14px; line-height: 1.7em; }
+.relatedtour li .name a:hover { color: #1b9ecc; }
+.relatedtour li .price { color: #f4542a; text-align: right; font-size: 12px; }
+.relatedtour li .price i { color: #666; }
+.daohang { margin-top: 20px; margin-bottom: 20px }
+.daohang a { padding: 0 10px; }
+.tour_summary .tour_image { border: 1px solid #707070; position: relative; background: url(../images/preload.gif) center center no-repeat; height: 337px; width: 505px;margin-right: 30px;}
+.tour_summary .tour_image .tour_image_d{width: 100%;height: 100%;}
+.tour_summary .tour_image .tour_image_d img{width: 100%;height: 100%;}
+.tour_image .scene_img_navs { position: absolute; z-index: 9; bottom: 0; left: 0; width: 100%; height: 76px; background: url(../images/list_hover_bg.png) 0 0 repeat scroll; }
+.tour_image .scene_img_navs .tarrow { height: 76px; }
+.tour_image .scene_img_navs a.ico_sceneimg { height: 76px; line-height: 76px; display: inline-block; }
+.tour_image .scene_img_navs a.ico_sceneimg img { margin-top: 25px; }
+.tour_image .scene_img_navs .tnavsbar { width: 457px; margin: 10px 0 0 23px; height: 59px; overflow: hidden; }
+.tour_image .scene_img_navs .tnavsbar ul { width: 1600px; }
+.tour_image .scene_img_navs .tnavsbar ul li { float: left; margin-right: 10px; width: 89px;height: 59px;}
+.tour_image .scene_img_navs .tnavsbar ul li img{width: 100%;height: 100%;}
+.tour_image .scene_img_navs .tnavsbar ul li a { }
+.tour_summary .vd_tour { width: 640px; position: relative; }
+.tour_summary .vd_tour .title { font-size: 19px; color: #323232; margin-bottom: 10px; }
+.vd_tour .vd_list dl { color: #666; margin-bottom: 8px; }
+.vd_tour .vd_list dl dt { width: 80px; float: left; }
+.vd_tour .vd_list dl dd { float: left; }
+.vd_tour .vd_list dl dd.price { color: #ff6138; font-weight: bold; }
+.vd_tour .vd_list dl dd.price strong { font-size: 30px; }
+.vd_tour .vd_list dl dd.price i { font-size: 14px; color: #666; font-weight: normal; }
+.vd_tour .vd_dz { margin-top: 22px; background-color: #ececec; padding: 15px; color: #666; }
+.vd_tour .vd_dz i { width: 20px; height: 20px; display: inline-block; vertical-align: middle; background: url(../images/icons.png) -100px -140px; margin-right: 10px; }
+.vd_tour .vd_dz a { display: inline-block; vertical-align: middle; height: 26px; padding: 0 15px; line-height: 26px; border: 1px solid #36bae8; color: #36bae8; border-radius: 100px; margin-left: 10px; }
+.vd_tour .vd_dz a:hover { background-color: #fff; }
+.calendar-tabs { cursor: pointer; height: 52px; background-color: #fff }
+.calendar-tabs-prev, .calendar-tabs-next { background-image: url(../images/abroad-group.png); background-color: #f5f5f5; border: 1px solid #e3e3e3; float: left; width: 33px; height: 50px }
+.calendar-tabs-prev:hover, .calendar-tabs-next:hover { background-color: #fff }
+.calendar-tabs-prev.disabled, .calendar-tabs-next.disabled { background-color: #f5f5f5; cursor: default }
+.calendar-tabs-prev { background-position: 0 0; width: 32px }
+.calendar-tabs-prev.disabled { background-position: 0 -50px }
+.calendar-tabs-next { background-position: -40px 0; margin-left: -1px }
+.calendar-tabs-next.disabled { background-position: -40px -50px }
+.calendar-tab { text-align: center; background-color: #f5f5f5; border: 1px solid #e3e3e3; float: left; width: 104px; height: 50px; margin-left: -1px }
+.calendar-tab:hover { background-color: #fff }
+.calendar-tab a { padding-top: 3px; display: block; width: 100%; margin: -1px }
+.calendar-tab a:hover { color: #333; text-decoration: none }
+.calendar-tab.disabled { cursor: default; background-color: #f5f5f5 }
+.calendar-tab.active { height: 51px; position: relative; background-color: #36BAE8; }
+.calendar-tab.active a { }
+.calendar-tab.active .calendar-tab-month, .calendar-tab.active .calendar-tab-price { color: #fff }
+.calendar-tab-month { margin-top: 5px; line-height: 20px; font-size: 14px; }
+.calendar-tab-price { line-height: 16px; font-size: 12px; color: #ff6702 }
+.calendar-tab-price-none { color: #9a9a9a }
+#calendar-area .ui-calendar { width: 490px; }
+#calendar-area .ui-calendar .calmonth { width: 490px; margin-left: 0; }
+#calendar-area .ui-calendar .calbox { border-color: #eee; min-height: 330px; border-width: 0; }
+#calendar-area .ui-calendar .date { height: 49px; }
+#calendar-area .calmonth .caldate:hover { background: #fff1cf; }
+#calendar-area .ui-calendar-big .calmonth .caldisabled:hover { background-color: transparent }
+#calendar-area .calmonth .td-selected .caldate { border: 1px solid #f90; background: #fffaee; margin: -1px; }
+#calendar-area .calmonth .caltable { height: auto; }
+#calendar-area .calmonth .caltable td { height: 49px; }
+#calendar-area .calmonth .calprice { font-size: 13px; }
+#calendar-area .month-prev, #calendar-area .month-next, #calendar-area .caltitle { display: none; }
+#calendar-area .calmonth .caltable th { background-color: #fff; }
+.booking_float_input { background-color: #fff; display: inline-block; position: relative }
+.booking_float_input input { color: #333; font-size: 14px; width: 140px; height: 22px; line-height: 22px; padding: 3px 10px; position: relative; background: none; border: #ccc solid 1px }
+.detail_icon { display: inline-block; background: url(../images/hotel_flight_detail.png) no-repeat 0 0; }
+.detail_icon_time { width: 14px; height: 14px; background-position: 0 -100px; position: absolute; right: 9px; top: 50%; margin-top: -7px; }
+.select_box { width: 100px; border: 1px solid #ccc; position: relative; float: left; font-size: 14px; }
+.select_box .selected_nums { margin-left: 8px; color: #999; font-size: 13px; text-indent: 5px; line-height: 24px;  overflow: hidden;white-space: nowrap;text-overflow: ellipsis; padding-right: 10px;}
+.select_box i { display: block; height: 0; width: 0; border-top: 6px solid #c3c3c3; border-left: 4px solid transparent; border-right: 4px solid transparent; position: absolute; right: 8px; top: 10px; }
+.select_box select { position: absolute; top: 0; left: 0; opacity: 0; filter: Alpha(Opacity=0); width: 100%; height: 100%; cursor: pointer; }
+.select_box b { display: block; height: 0; width: 0; border-top: 6px solid #666; border-left: 4px solid transparent; border-right: 4px solid transparent; position: absolute; right: 7px; top: 8px; }
+.rs .select_box { margin-right: 10px; }
+.vd_summary { border: 3px solid #efd9a5; margin: 20px 0; padding: 10px; }
+.vd_summary .price_calendar { width: 490px; height: 390px; background: url(../images/preload.gif) center center no-repeat; }
+.vd_summary .price_section { width: 640px; }
+.vd_summary .price_section .price_section_tit { font-size: 18px; color: #323232; line-height: 2em; margin-bottom: 15px; }
+.price_section dl { margin: 8px 0; }
+.price_section dl dt { float: left; width: 73px; color: #666; line-height: 30px; }
+.price_section dl dd { float: left; }
+.price_section dl dd.playtime span { line-height: 30px; display: block; font-size: 12px; margin-left: 15px; }
+.price_section dl dd.playtime span i { color: #999; }
+#tour_plan_d .room,.select{ border: 1px solid #CCCCCC; width: 160px; height: 28px; background: #fff; line-height: 28px; cursor: pointer; }
+#tour_plan_d span { display: inline-block; text-align: center; width: 140px; height: 28px; font-size: 13px; color: #333; }
+#tour_plan_d .sel_listPt a { padding: 0 10px; }
+#tour_plan_d .sel_listPt a:hover { background: #ccc; color: #666; }
+#count_rooms .room_nums_d { margin-bottom: 12px; line-height: 30px; clear: both; }
+.room-lists a { color: #31a7d1; }
+.room-lists a:hover { color: #f22; }
+.room-lists a.check_more6:hover { color: #1B1; }
+.price_section .rs dl dd.price { color: #ff6138; font-weight: bold; }
+.price_section .rs dl dd.price strong { font-size: 30px; }
+#tour_add .choose_to { display: block; width: 145px; height: 45px; color: #fff; font-size: 16px; line-height: 45px; text-align: center; border-radius: 22px; background: #ff5500; }
+#tour_add .choose_to:hover { background: #e64e03; }
+.visa-banner li{width:377px;float: left;background: #e5e5e5;height: 44px;line-height: 44px; text-align: center;position: relative;margin-right:20px;color: #323232;}
+.visa-banner{margin-right: -20px;padding: 26px 0 23px 0;overflow: hidden;
+}
+.visa-banner li:after,.visa-banner li:before{content:"";position: absolute;width: 0;height: 0;}
+.visa-banner li:before{border-left:16px solid #e5e5e5;border-top: 22px solid transparent;border-bottom: 22px solid transparent;right:-16px;}
+.visa-banner li:after{border-left:16px solid transparent;border-top: 22px solid #e5e5e5;border-bottom: 22px solid #e5e5e5;left:-16px;}
+.visa-banner .current{background: #36bbe8;color: #fff;}
+.visa-banner .current:before{border-left:16px solid #36bbe8;border-top: 22px solid transparent;border-bottom: 22px solid transparent;right:-16px;
+}
+.visa-banner .current:after{border-left:16px solid transparent;border-top: 22px solid #36bbe8;border-bottom: 22px solid #36bbe8;left:-16px;}
+/* f浮动框 */
+.calhover{
+	position: absolute;
+	background: #fff;
+	z-index: 1000;
+	padding: 5px;
+    color:rgb(102, 102, 102);
+    font-size: 12px;
+ 	border:3px solid #efd9a5;
+ 	display: none;
+}
+.triangle{
+	position: relative;
+	overflow:hidden;
+}
+.triangle li{
+	float: left;
+	width: 95px;
+	text-align:center;
+	cursor: pointer;
+
+}
+.triangle li.active{
+	background: #ddd;
+}
+.triangle li img{
+	margin-top:10px;
+}
+.triangle li span{
+	display: block;
+}
+.triangle li span.price{
+	color: #f50;
+}

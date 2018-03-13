@@ -1,0 +1,68 @@
+.ui-calendar { position: relative; width: 855px; overflow: hidden }
+.ui-calendar .calwarp { margin-right: -5px; padding-left: 5px; width: 10000px }
+.ui-calendar .calmonth { position: relative; display: inline; float: left; width: 430px; margin-left: -5px; font-family: "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif; font-size: 12px }
+.ui-calendar .calbox { position: relative; z-index: 2; min-height: 380px; background: #fff; border: 5px solid #ccc }
+.ui-calendar .caltitle { height: 30px; line-height: 30px; background: #36BAE8; color: #fff; text-align: center; font-size: 14px; font-weight: bold }
+.ui-calendar .month-prev, .ui-calendar .month-next { position: absolute; z-index: 10; top: 5px; width: 20px; height: 20px; background: #fff; text-align: center; font-size: 24px; line-height: 18px; color: #36BAE8; cursor: pointer }
+.ui-calendar .month-prev { left: 5px }
+.ui-calendar .month-next { right: 5px }
+.calmonth .monthbg { position: absolute; top: 0; left: 0; width: 100%; font-family: Arial, sans-serif; font-style: normal; color: #eee; z-index: -1; z-index: 0\0; z-index: -1\9\0; font-size: 240px; line-height: 375px; text-align: center }
+.calmonth .caltable { border-collapse: collapse; border-spacing: 0; width: 100%; background: none; line-height: 20px; height: 390px; cursor: pointer }
+.calmonth .nodate { background: #f6f6f6; cursor: default; filter: alpha(opacity=60); background: rgba(246, 246, 246, 0.5) }
+.calmonth .caltable tr { }
+.calmonth .caltable td { border: 1px solid #ddd; width: 14.2857%; height: 15.384615%; padding: 0; vertical-align: top }
+.calmonth .caltable th { text-align: center; padding: 0; height: 28px; line-height: 28px; background: #eee }
+.calmonth .caltable th.sun { border-left: 1px solid #ddd }
+.calmonth .caltable th.sat { border-right: 1px solid #ddd; *border-right:none
+}
+.calmonth .calweek { background: #eee }
+.calmonth .caldate, .calmonth .nodate { position: relative; padding: 0; width: 100%; height: 100% }
+.calmonth .caldate:hover { background: #FFBA13; }
+.calmonth .calday { position: absolute; top: 3px; left: 5px; }
+.calmonth .calinfo { position: absolute; top: 3px; right: 5px; color: #1B1 }
+.calmonth .calprice { position: absolute; bottom: 3px; left: 5px; color: #f60 }
+.calmonth .today .calprice { color: #fff }
+.calmonth .today:hover .calprice { color: #f60 }
+.calmonth .calactive { position: absolute; right: 6px; top: 20px; color: #29CC00 }
+.calmonth .today { color: #fff; background: #fff; }
+.calmonth .today .calday { color: #36BAE8 }
+.nodate .calday { color: #999 }
+.calmonth .today:hover { background: #FEF2F9; background: rgba(255, 236, 247, 0.7); box-shadow: none }
+.calmonth .today:hover .calday { color: #000 }
+.ui-calendar-big .caldisabled { color: #BBB }
+.ui-calendar-big .caldisabled:hover { background-color: transparent }
+.ui-calendar-big .caldate:hover.caldisabled { cursor: default }
+.ui-calendar-big .td-selected .calselected {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../images/gou.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.ui-calendar-mini { width: 440px }
+.ui-calendar-mini .calwarp { margin-right: -1px; padding-left: 1px }
+.ui-calendar-mini .calmonth { width: 220px; margin-left: -1px }
+.ui-calendar-mini .month-prev, .ui-calendar-mini .month-next { width: 16px; height: 16px; line-height: 14px; font-size: 20px }
+.ui-calendar-mini .caltitle { height: 30px; line-height: 30px }
+.ui-calendar-mini .calbox { padding: 5px; border: 1px solid #CCC; min-height: 185px }
+.ui-calendar-mini .calmonth .caltable { height: 185px }
+.ui-calendar-mini .calmonth .caltable td { height: 30px; line-height: 30px; text-align: center; border: none }
+.ui-calendar-mini .calmonth .monthbg { font-size: 100px; line-height: 215px }
+.ui-calendar-mini .calmonth .caltable th.sun { border-left: none; color: #FF5500 }
+.ui-calendar-mini .calmonth .caltable th.sat { border-right: none; color: #FF5500 }
+.ui-calendar-mini th { font-weight: normal }
+.ui-calendar-mini .calmonth .caltable tr { height: 30px; overflow: hidden }
+.ui-calendar-mini .calmonth .today { color: #000; box-shadow: none; background: #FBF1EC; width: 28px; height: 28px; border: 1px solid #FBC1AA }
+.ui-calendar-mini .calmonth .calfest { color: #F55415 }
+.ui-calendar-mini .calmonth .caldate:hover, .ui-calendar-mini .calmonth .selectDay:hover { background: #FFBA13; color: #fff }
+.ui-calendar-mini .calmonth .selectDay { background: #FFBA13; color: #FFf }
+.ui-calendar-mini .calmonth .interval { background: #E4E4E4; color: #000 }
+.ui-calendar-mini .calmonth .nodate, .ui-calendar-mini .calmonth .nodate:hover { color: #D9D9D9 !important; border: none !important; filter: alpha(opacity=60); background: none; cursor: default; width: 100%; height: 100% }
+.ui-calendar-mini .calmonth .caldisabled { color: #BBB; cursor: default }
+.ui-calendar-mini .calmonth .caldisabled:hover { color: #BBB; background-color: transparent }
+.ui-calendar-mini .calmonth .caldisabled.calmiddle:hover { background-color: #fcdaed }
+.ui-calendar-mini .calmonth .td-selected .caldate { width: 32px; margin-left: -1px; color: #fff; background: #F90; border: none }
+.ui-calendar-mini .calmonth .nodate { background-color: transparent }
+

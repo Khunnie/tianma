@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+        <style>
+        .reg dl, .xxfb dl, .gr_xg dl { background: #FFF; padding-top: 0.5rem; padding-bottom: 0.5rem; border-top: 1px solid #d2d2d2; border-bottom: 1px solid #d2d2d2; height: 2.5rem; margin: 0.5rem 0; }
+		.reg dt, .reg dd, .xxfb dt, .xxfb dd, .gr_xg dt, .gr_xg dd { height: 1.5rem; line-height: 1.5rem; float: left; }
+		.reg dd, .xxfb dd, .gr_xg dd { margin-left: 1rem; width: 65%; }
+		.reg dd .r_txt, .reg dd select{ font-size: 1rem; line-height: 1.5rem; width: 100%; float: left; }
+		.reg span { display: inline-block; text-align: center; }
+		.reg .im_red { width: 1rem; padding-left: 0.5rem; }
+		.reg .reg_left { width: 5.5rem; font-size: 0.8rem; color: #696868; border-right: 1px solid #d2d2d2; }
+		.reg .reg_thk, .reg .register_button1 { margin: 0.5rem; }
+		.reg dd select{font-size: 1rem;line-height: 1.5rem;width: 100%;float: left;}
+		.red {color: #F00;}
+        </style>
+	</head>
+	<body style="padding-bottom: 5rem;">
+		<div class="global" style="min-height: 10rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i>返回</a></div>
+			    <div class="pagetitle"><b>个人中心</b></div>
+			    <div class="otherFun">
+			        <a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			    </div>
+			</div>
+			
+			<div class="reg">
+                <dl class="reg_yhjb">
+                    <dt><span class="im_red red">*</span><span class="reg_left">用户级别</span></dt>
+                    <dd><select name="USER_TYPE" id="user_level">
+                      <option value="1">普通用户</option>
+                      <option value="2">船企用户</option>
+                      <option value="3">港口用户</option>
+                      <option value="4">货主或代理用户</option>
+                      <option value="5">长航系统用户</option>
+                  </select></dd>
+                </dl>
+                <dl id="nc">
+                    <dt><span class="im_red red">*</span><span class="reg_left">昵称</span></dt>
+                    <dd><input type="text" class="r_txt r_nc" id="r_nc" placeholder="请输入您的昵称" /></dd>
+                </dl>
+                <dl id="username2">
+                    <dt><span class="im_red red">*</span><span class="reg_left">姓名</span></dt>
+                    <dd><input type="text" class="r_txt r_xm" id="r_xm" placeholder="请输入真实姓名" /></dd>
+                </dl>
+                <dl> 
+                    <dt><span class="im_red red">*</span><span class="reg_left">用户名</span></dt>
+                    <dd><input type="text" class="r_txt r_yhm" id="r_yhm" placeholder="注册后，此号将成为您的账号" /></dd>
+                </dl>
+                <dl>
+                    <dt><span class="im_red red">*</span><span class="reg_left">密码</span></dt>
+                    <dd><input type="text" class="r_txt r_mm" id="r_mm" placeholder="8位英文或数字组成，不用特殊符号" /></dd>
+                </dl>
+                <dl>
+                    <dt><span class="im_red red">*</span><span class="reg_left">确认密码</span></dt>
+                    <dd><input type="text" class="r_txt r_qrmm" id="r_qrmm" placeholder="请再次输入您的密码" /></dd>
+                </dl>
+                <dl id="sex">
+                    <dt><span class="im_red red">*</span><span class="reg_left">性别</span></dt>
+                    <dd><label><input type="radio" checked="checked" value="男" name="USER_GENDER">&nbsp;&nbsp;男&nbsp;&nbsp;&nbsp;</label> <label><input type="radio" value="女" name="USER_GENDER">&nbsp;&nbsp;女&nbsp;&nbsp;</label></dd>
+                </dl>
+                <dl id="sfz">
+                    <dt><span class="im_red red">*</span><span class="reg_left">身份证号</span></dt>
+                    <dd><input type="text" class="r_txt r_sfz" id="r_sfz" placeholder="请输入15位或18位身份证号码" /></dd>
+                </dl>
+                <dl id="csrq">
+                    <dt><span class="im_red red">*</span><span class="reg_left">出生日期</span></dt>
+                    <dd><input type="date" class="r_txt r_csrq" id="r_csrq" placeholder="请选择您的出生日期" /></dd>
+                </dl>
+                <dl id="nl">
+                    <dt><span class="im_red red">*</span><span class="reg_left">年龄</span></dt>
+                    <dd><input type="text" class="r_txt r_nl" id="r_nl" placeholder="请输入您的年龄" /></dd>
+                </dl>
+                <dl id="xl">
+                    <dt><span class="im_red red">&nbsp;</span><span class="reg_left">学历</span></dt>
+                    <dd><select name="USER_EDUCATION">
+                                    <option value="小学">小学</option>
+                                    <option value="初中">初中</option>
+                                    <option value="高中">高中</option>
+                                    <option value="专科">专科</option>
+                                    <option value="本科">本科</option>
+                                    <option value="硕士">硕士</option>
+                                    <option value="博士">博士</option>
+                                    </select></dd>
+                </dl>
+                <dl id="ssdw" style="display:none;">
+                    <dt><span class="im_red red">*</span><span class="reg_left">所属单位</span></dt>
+                    <dd><input type="text" class="r_txt r_ssdw" id="r_ssdw" placeholder="请输入您的所属单位" /></dd>
+                </dl>
+                <dl id="dw1" style="display:none;">
+                    <dt><span class="im_red red">*</span><span class="reg_left">昵称</span></dt>
+                    <dd>
+                    	<select id="ssdw" name="ssdw">
+                            <option value="20034">长江航务管理局</option>
+                            <option value="20039">长江海事局</option>
+                            <option value="20041">长江航道局</option>
+                            <option value="20040">长江三峡通航管理局</option>
+                            <option value="20042">长江航运公安局</option>
+                        </select>
+            </dd>
+                </dl>
+                <dl id="byxx">
+                    <dt><span class="im_red red">&nbsp;</span><span class="reg_left">毕业学校</span></dt>
+                    <dd><input type="text" class="r_txt r_byxx" id="r_byxx" placeholder="请输入您的毕业学校" /></dd>
+                </dl>
+                <dl id="szcs">
+                    <dt><span class="im_red red">&nbsp;</span><span class="reg_left">所在城市</span></dt>
+                    <dd><input type="text" class="r_txt r_szcs" id="r_szcs" placeholder="请输入所在城市" /></dd>
+                </dl>
+                <dl id="yx">
+                    <dt><span class="im_red red">*</span><span class="reg_left">邮箱</span></dt>
+                    <dd><input type="text" class="r_txt r_yx" id="r_yx" placeholder="请输入邮箱地址，能帮您找到密码！" /></dd>
+                </dl>
+                <dl id = "ptyx" name="ptyx">
+                    <dt><span class="im_red red">&nbsp;</span><span class="reg_left">申请平台邮箱</span></dt>
+                    <dd>
+                    	<label>
+                    		<input type="checkbox" style="border:1px solid #999;" size="30" value="1" id="sqEmail" name="sqEmail">
+                    			<span class="span2">&nbsp;&nbsp;用户名@cjhywl.com</span>
+                    	</label>
+                    </dd>
+                </dl>
+                <dl id="lxr" style="display:none;">
+                    <dt><span class="im_red red">*</span><span class="reg_left">联系人</span></dt>
+                    <dd><input type="text" class="r_txt r_lxr" id="r_lxr" placeholder="请输入联系人" /></dd>
+                </dl>
+                <dl id="lxdh">
+                    <dt><span class="im_red red">*</span><span class="reg_left">联系电话</span></dt>
+                    <dd><input type="text" class="r_txt r_lxdh" id="r_lxdh" placeholder="请输入您的联系电话" /></dd>
+                </dl>
+                
+              </div>
+			
+			<div class="login-ok">
+				<a class="btn-login-ok exitLogin" href="javascript:;">退出登录</a>
+			</div>
+			
+			<footer>
+				<div class="bottomMenu">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="ico-home"></i>
+                				<p>首页</p>
+            				</a>
+						</li>
+                        <li>
+							<a href="javascript:;" onclick="tel();">
+								<i class="ico-ask"></i>
+                				<p>联系我们</p>
+            				</a>
+						</li>
+						<li class="on">
+							<a href="#">
+								<i class="ico-personcenter"></i>
+                				<p>个人中心</p>
+            				</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	</body>
+</html>

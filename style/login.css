@@ -1,0 +1,170 @@
+.reg{
+	background: url(../images/bg.jpg) center center no-repeat;
+    min-height: 686px;
+    padding: 50px 0;
+    display: block;
+    box-sizing: content-box;
+    background-size: 100% 100%;
+}
+.reg-block {
+    width: 262px;
+    max-width: 100%;
+    float: right;
+    background-color:#fff;
+    padding: 35px 20px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,.2);
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.reg-block .reg-tit {
+    font-size: 22px;
+    color: #323232;
+    font-weight: 600;
+   text-align: center;
+}
+.reg-block ul {
+    margin-top: 25px;
+}
+.reg-block li {
+    margin-bottom: 15px;
+    color: #666;
+}
+.reg-block li label.txt, .reg-block li label.yzm {
+    border: 1px solid #969696;
+    display: block;
+    background: #fff;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px 0 30px;
+    position: relative;
+}
+.reg-block li label.tel_iphone{
+	padding: 0;
+}
+.reg-block li label.txt .fa {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    line-height: 30px;
+    background: url(../images/book.png);
+}
+.txt select{
+	width: 100%;
+	border: none;
+	background: none;
+	height: 100%;
+	top: 0;
+}
+.reg-block li label.txt .email-ico{
+	width: 15px;
+	height: 11px;
+	background-position: -91px 0;
+}
+.reg-block li label.txt .pas-ico{
+	width: 14px;
+	height: 18px;
+	background-position: -113px 0;
+}
+.reg-block li label .reginputstl {
+    height: 27px;
+    line-height: 27px;
+    display: block;
+    width: calc( 100% - 15px);
+    border: none;
+    padding-left: 10px;
+ }
+ .reg-block li label .telNum {
+    width: calc( 85% - 40px);
+ }
+
+.reg-block li label.yzm {
+    width: 45%;
+    padding: 0;
+}
+.btn-reg {
+    width: 100%;
+    background-color: #f79d2b;
+    border-width: 0;
+    color: #fff;
+    height: 40px;
+    line-height:40px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.btn-reg:hover{
+	background: #e89801;
+	color: #fff;
+}
+.reg-block li .f16{
+	font-weight: bold;
+	color: #36bbe8;
+}
+.reg-yzm .btnfsyzm {
+    width: 50%;
+    background-color: #fff;
+    border:1px solid #d3a5c0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    color: #8a0a55;
+    border-radius: 4px;
+    text-align: center;
+}
+.forget{
+	text-decoration: underline;
+	color: #973e72;
+}
+.forget:hover{
+	color: #7fceee;
+}
+.wire{
+	width: 100%;
+	height: 1px;
+	background: #eaeaea;
+	margin-top: 28px;
+}
+.reg-block .find li label.txt{
+	display: inline-block;
+	padding: 0;
+	width: 305px;
+	margin-left: 10px;
+}
+.find-block{
+	width: 460px;
+	padding: 35px 50px 60px 50px;
+	position: absolute;
+	left: calc( 50% - 300px) ;
+}
+.find-block li{
+	padding: 0 48px;
+	line-height: 30px;
+}
+.find-block li label.yzm{
+	width: 105px;
+	display: inline-block;
+}
+.find-block li label .telNum {
+    width: calc( 85% - 28px);
+}
+.Btnselect{
+	position: relative;
+	width:60px;
+	height: 100%;
+	border-right: 1px solid #dfdfdf;
+	float: left;
+	text-indent: 5px;
+}
+.Btnselect i{
+	position: absolute;
+	right: 5px;
+	top: 15px;
+	width: 7px;
+	height: 4px;
+	background: url(../images/row-list-sj.png);
+
+}

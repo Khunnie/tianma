@@ -1,0 +1,4 @@
+.newslist dl{border-bottom:1px dotted #ddd;padding:10px;}
+.newslist dl dt a{color:#009342;font-size:16px;}
+.newslist dl dt a:hover{color: #00c801;}
+.newslist dl dd a{color:#f90;}

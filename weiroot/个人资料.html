@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>天马旅游</title>
+		<link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/css.css">
+		<style>
+			.order2-2b dl{border-bottom: none;}	
+		</style>
+	</head>
+	<body>
+		<div class="global" style="padding-bottom: 6rem;">
+			<div class="topside">
+			    <div class="toback"><a href="javascript:history.go(-1);"><i class="ico-back"></i></a></div>
+			    <div class="pagetitle"><b>个人资料</b></div>
+			    <div class="otherFun">
+			         <a href="#">
+			    		<i class="ico-dot"></i>
+			    	</a>
+			    </div>
+			</div>
+			
+			
+			<section class="order2-2 whitesctbg">
+				<div class="title order2-tit">个人资料</div>
+				<div class="order2-2b">
+					<dl><dt>帐号</dt><dd><input type="text" class="inputstyle" id="txtContactzh" placeholder="请输入帐号" value="13333333333" /></dd></dl>
+					<dl><dt>姓名</dt><dd><input type="text" class="inputstyle" id="txtContactName" placeholder="请输入联系人姓名" /></dd></dl>
+					<dl><dt>手机</dt><dd><input type="text" class="inputstyle" id="txtMobilePhone" placeholder="请输入联系人手机号码" /></dd></dl>
+					<dl><dt>证件类型</dt><dd><select id="Guest_CredType" class="zjN">
+                                <option value="-1" selected="selected">证件类型</option>
+                                <option value="0">身份证</option>
+                                <option value="1">护照</option>
+                                <option value="2">军官证</option>
+                                <option value="3">学生证</option>
+                                <option value="4">其他</option>
+                            </select></dd></dl>
+					<dl><dt>证件号码</dt><dd><input type="text" class="inputstyle" id="txtCardNum" placeholder="请输入证件号码" /></dd></dl>
+					<dl><dt>电子邮箱</dt><dd><input type="text" class="inputstyle" id="txtEmail" placeholder="请输入您的邮箱" /></dd></dl>
+				</div>
+			</section>
+			<input id="hid_id" type="hidden" value="0" />
+			<div class="ok1 submit-two">
+				<a href="javascript:;" class="btn-ok submitButton">确定</a> 
+			</div>
+			<footer>
+				<div class="bottomMenu">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="ico-home"></i>
+                				<p>首页</p>
+            				</a>
+						</li>
+                        <li>
+							<a href="javascript:;" onclick="tel();">
+								<i class="ico-ask"></i>
+                				<p>联系我们</p>
+            				</a>
+						</li>
+						<li class="on">
+							<a href="#">
+								<i class="ico-personcenter"></i>
+                				<p>个人中心</p>
+            				</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script>
+		var RegName = /(^[\u4e00-\u9fa5]{2,5}$)|(^[a-zA-Z]{3,10}$)/;
+		$(document).ready(function(){
+			$(".submit-two .submitButton").unbind('click').bind('click', function () {
+				var contactzh = $("#txtContactzh");
+                if ($.trim($(contactzh).val()).length == 0) {
+                    ShowMsg("帐号不能为空！");
+                    $(contactzh).focus();
+                    return;
+                }
+				
+                var contactName = $("#txtContactName");
+                if ($.trim($(contactName).val()).length == 0) {
+                    ShowMsg("姓名不能为空！");
+                    $(contactName).focus();
+                    return;
+                }
+                else if (!RegName.test($(contactName).val())) {
+                    ShowMsg("姓名格式不对！");
+                    $(contactName).focus();
+                    return;
+                }
+                
+                //手机
+                var MobilePhone = $("#txtMobilePhone");
+                if (!$.trim($(MobilePhone).val()).length > 0){
+                	ShowMsg("手机号码不能为空！");
+                    $(MobilePhone).focus();
+                    return;
+                }
+                else if ($.trim($(MobilePhone).val()).length > 0 && !CheckPhoneNum($(MobilePhone).val())) {
+                    ShowMsg("手机号码不正确！");
+                    $(MobilePhone).focus();
+                    return;
+                }
+                
+                var cname = $.trim($(contactName).val());
+                var Guest_CredType = $("#Guest_CredType").val();
+                if (parseInt(Guest_CredType) < 0) {
+                    ShowMsg("请选择证件类型！");
+                    $("#Guest_CredType").focus();
+                    return;
+                }
+                
+                var txtCardNum = $("#txtCardNum");
+                if ($.trim($(txtCardNum).val()).length < 4) {
+                    ShowMsg("证件号码不能为空！");
+                    $(txtCardNum).focus();
+                    return;
+                }
+                else if (IsSafe($.trim($(txtCardNum).val()))) {
+                    ShowMsg("证件号码输入了非法字符！");
+                    $(txtCardNum).focus();
+                    return;
+                }
+                //邮箱
+                var email = $("#txtEmail");
+                if ($.trim($(email).val()).length > 0 && !CheckEmail($(email).val())) {
+                    ShowMsg("邮箱格式不正确！");
+                    $(email).focus();
+                    return;
+                }
+                
+                var cnum = $.trim($(txtCardNum).val());
+                
+                var cmobile = $.trim($(MobilePhone).val());
+                var gid = $("#hid_id").val();
+
+                var url = "321.html?r=" + Math.random();
+                url += "&action=editguest";
+                url += "&gid=" + gid;
+                url += "&cname=" + cname;
+                url += "&gtype=" + Guest_CredType;
+                url += "&cnum=" + cnum;
+                url += "&cmobile=" + cmobile;
+                $.getJSON(url, function (gdata) {
+                    if (parseInt(gdata.ret) == 1) {
+                        ShowMsg(gdata.msg);
+                    }
+                    else if (parseInt(gdata.ret) == -1) {
+                        ShowMsg(gdata.msg);
+                   }
+                   else {
+                        ShowMsg(gdata.msg);
+                   }
+               });
+
+                
+			})
+		})
+		
+		function gettypename(value) {
+		    var returnvalue = "";
+		    switch (value.toString()) {
+		        case "0":
+		            returnvalue = "身份证";
+		            break;
+		        case "1":
+		            returnvalue = "护照";
+		            break;
+		        case "2":
+		            returnvalue = "军官证";
+		            break;
+		        case "3":
+		            returnvalue = "学生证";
+		            break;
+		        case "4":
+		            returnvalue = "其他";
+		            break;
+		    }
+		    return returnvalue;
+		}
+		
+		</script>
+	</body>
+</html>

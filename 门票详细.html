@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天马旅游</title>
+<link href="style/core.css" rel="stylesheet" type="text/css" />
+<link href="style/common.css" rel="stylesheet" type="text/css" />
+<link href="style/calendar.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="style/visa.css" type="text/css"/>
+<link rel="stylesheet" href="style/resize.css" type="text/css" />
+</head>
+
+<body style="background: #fff;">
+<!--顶部-->
+<div class="top">
+	<div class="w1200 clearfix">
+        <div class="Logged fl">
+        	<div class="notLogged"><a href="#">登录</a><span>|</span><a href="#">注册</a></div>
+            <div class="hasLogged hide">您好，<a href="#"><strong>张三</strong></a>！</div>
+        </div>
+        <div class="fr clearfix">
+        	<div class="peerEntry fl"><a href="#">同行入口</a></div>
+        	<div class="money_sw_box fl">
+                <a class="money_sw_box_txt" href="javascript:;" data-id="1"><label class="sw_syb">RMB</label><i class="sw_sj"></i></a>
+                <div class="money_sw hide" style="display: none; opacity: 0;">
+                    <a class="on" data-id="1"><label class="sw_syb">RMB</label><label class="sw_txt">人民币元</label></a>
+                    <a data-id="2"><label class="sw_syb">CAD</label><label class="sw_txt">加元</label></a>
+                    <a data-id="3"><label class="sw_syb">USD</label><label class="sw_txt">美元</label></a>
+                </div>
+            </div>
+            <div class="language_box fl">
+            	<a class="language_box_txt" href="javascript:;"><span class="lg_nr"><i class="lg_syb lg_jtzw"></i><label class="lg_txt">简体中文</label></span><i class="sw_sj"></i></a>
+                <div class="language_sw hide" style="display: none; opacity: 0;">
+                    <a class="on"><i class="lg_syb lg_jtzw"></i><label class="lg_txt">简体中文</label></a>
+                    <a><i class="lg_syb lg_ftzw"></i><label class="lg_txt">繁体中文</label></a>
+                    <a><i class="lg_syb lg_en"></i><label class="lg_txt">英文</label></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="white">
+<!--头部-->
+<div class="mainHeader w1200 clearfix">
+	<div class="logo fl"><img src="images/logo.jpg" alt="天马旅游" /></div>
+    <div class="headerTab fl"><a class="on" href="#"><i class="htab htab1"></i>美加旅游</a> <a href="#"><i class="htab htab2"></i>欧洲旅游</a> <a href="#"><i class="htab htab3"></i>亚洲旅游</a><div class="guide-tips" style="display: none;" id="J_guide_tips">
+        <i></i>
+    </div></div>
+     <div class="swim fl">
+    	<img src="images/bm.png" alt="" class="fl"/>
+    	<a href="#" class="america fl">畅游北美</a>
+    	<a href="#" class="reduce fl">立减<i>$120</i></a>
+    </div>
+    <div class="headerSearch fr"><input type="text" name="wd" class="siteTopSearchIpt" placeholder="出发地 / 目的地 / 线路名称 " value="" autocomplete="off"><a href="javascript:;" class="searchBtn"><i class="ico_search"></i></a></div>
+</div>
+<!--导航-->
+<div class="nav_warp">
+	<div class="w1200 clearfix">
+    	<!--左侧菜单-->
+        <div class="classify_nav hide-sn">
+            <span class="cn-t">欧洲旅游&nbsp;&nbsp;全部目的地</span>
+            <div class="nav-bar">
+            	<div class="nav-item">
+                	<div class="sub-item">
+                    	<div class="sub-item-cols"> 
+                        	<div class="col">
+    							<a class="no_ted" href="#"><h4>东岸</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">纽约</a>
+                                    <a href="#">波士顿</a>
+                                    <a href="#">华盛顿</a>
+                                    <a href="#">尼亚加拉大瀑布</a>
+                                    <a href="#">费城</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>西岸</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">洛杉矶</a>
+                                    <a href="#">旧金山</a>
+                                    <a href="#">拉斯维加斯</a>
+                                    <a href="#">盐湖城</a>
+                                    <a href="#">一号公路</a>
+                                    <a href="#">西雅图</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>中南部</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">芝加哥</a>
+                                    <a href="#">休斯顿</a>
+                                    <a href="#">新奥尔良</a>
+                                    <a href="#">圣安东尼奥</a>
+                                    <a href="#">奥斯汀</a>
+                                    <a href="#">达拉斯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-recommend">
+                    	<h3><a href="#">北欧</a></h3>
+                        <div class="recommend-list2">
+                        	<a class="cr_ffb" href="#">冰岛</a><a class="cr_ffb" href="#">格陵兰岛</a><a class="cr_ffb" href="#">法罗群岛</a><a class="cr_ffb" href="#">挪威</a><a class="cr_ffb" href="#">芬兰</a><a class="cr_ffb" href="#">瑞典</a><a class="cr_ffb" href="#">丹麦</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                	<div class="sub-item">
+                    	<div class="sub-item-cols"> 
+                        	<div class="col">
+    							<a class="no_ted" href="#"><h4>东岸2</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">纽约</a>
+                                    <a href="#">波士顿</a>
+                                    <a href="#">华盛顿</a>
+                                    <a href="#">尼亚加拉大瀑布</a>
+                                    <a href="#">费城</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>西岸2</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">洛杉矶</a>
+                                    <a href="#">旧金山</a>
+                                    <a href="#">拉斯维加斯</a>
+                                    <a href="#">盐湖城</a>
+                                    <a href="#">一号公路</a>
+                                    <a href="#">西雅图</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>中南部2</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">芝加哥</a>
+                                    <a href="#">休斯顿</a>
+                                    <a href="#">新奥尔良</a>
+                                    <a href="#">圣安东尼奥</a>
+                                    <a href="#">奥斯汀</a>
+                                    <a href="#">达拉斯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-recommend">
+                    	<h3><a href="#">中欧</a></h3>
+                        <div class="recommend-list2">
+                        	<a class="cr_ffb" href="#">法国</a><a class="cr_ffb" href="#">瑞士</a><a class="cr_ffb" href="#">德国</a><a class="cr_ffb" href="#">奥地利</a><a class="cr_ffb" href="#">捷克</a><a class="cr_ffb" href="#">匈牙利</a><a class="cr_ffb" href="#">英国</a><a class="cr_ffb" href="#">爱尔兰</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                	<div class="sub-item">
+                    	<div class="sub-item-cols"> 
+                        	<div class="col">
+    							<a class="no_ted" href="#"><h4>东岸3</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">纽约</a>
+                                    <a href="#">波士顿</a>
+                                    <a href="#">华盛顿</a>
+                                    <a href="#">尼亚加拉大瀑布</a>
+                                    <a href="#">费城</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>西岸3</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">洛杉矶</a>
+                                    <a href="#">旧金山</a>
+                                    <a href="#">拉斯维加斯</a>
+                                    <a href="#">盐湖城</a>
+                                    <a href="#">一号公路</a>
+                                    <a href="#">西雅图</a>
+                                </div>
+                            </div>
+                            <div class="col">
+    							<a class="no_ted" href="#"><h4>中南部3</h4></a>																
+                                <div class="more-list">
+                                    <a href="#">芝加哥</a>
+                                    <a href="#">休斯顿</a>
+                                    <a href="#">新奥尔良</a>
+                                    <a href="#">圣安东尼奥</a>
+                                    <a href="#">奥斯汀</a>
+                                    <a href="#">达拉斯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-recommend">
+                    	<h3><a href="#">南欧</a></h3>
+                        <div class="recommend-list2">
+                        	<a class="cr_ffb" href="#">希腊</a><a class="cr_ffb" href="#">意大利</a><a class="cr_ffb" href="#">西班牙</a><a class="cr_ffb" href="#">马耳他</a><a class="cr_ffb" href="#">葡萄牙</a><a class="cr_ffb" href="#">土耳其</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/左侧菜单-->
+        <ul class="sn-right classify_nav">
+        	<li><a href="#">当地参团</a></li>
+            <li><a href="#">游轮</a></li>
+             <li>
+            	<i class="hot"></i>
+            	<a href="javascipt:;">定制游</a>
+            	<ul class="menu-box">
+            		<li><a href="#">小包团定制</a></li>
+            		<li><a href="#">私人定制</a></li>
+            	</ul>
+            </li>
+            <li><a href="#">门票</a></li>
+            <li><a href="#">签证保险</a></li>
+            <li><a href="#">攻略</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!--显示-->
+<div class="refers w1200"><a href="#">首页</a>&gt;<a href="#">北美门票</a>&gt;<a href="#">洛杉矶门票</a>&gt;<a href="#">【特价专供】洛杉矶环球影城折扣门票 即买即用(扫码入园)比官网价更低$16</a></div>
+<!--门票详细页-->
+<section class="detail-page">
+		<div class="clearfix infor w1200">
+			<div class="clearfix tour_summary">
+				<div class="fl  tour_summary_img">
+					<img src="images/hlbt.png" alt="" class=" image"/>
+				</div>
+				<div class="fl info-visa">
+					<h4 class="info-txt">【特价专供】洛杉矶环球影城折扣门票 即买即用(扫码入园)比官网价更低$16</h4>
+					<ul class="info select_O">
+						<li>
+							<span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格:</span>
+							<p>
+								<span class="cost">c$
+									<i>396.60</i>
+								</span>
+							起/人</p>
+						</li>
+						<li>
+							<span>出游日期:</span>
+							<p>
+								<i class="detail_icon detail_icon_time"></i>
+								<input class="J_calendar btnIn Intab" type="text" value="2017-05-31" readonly=""/>
+							</p>
+							
+						</li>
+						<li>
+							<span>产品类型:</span>
+							<p>
+								<select class="Intab">
+									<option>淡季工作日早鸟票(上午十点前入园)</option>
+								</select>
+							</p>
+							
+						</li>
+						<li>
+							<span>出行人数:</span>
+                            <!-- 下拉框 -->
+							<div class="numSelect">
+                                <input type="text" value="1成人" class="Intab"/>
+                                <b class="ico-select"></b>
+                                <!-- 选项 -->
+                                <div class="lei-box">
+                                    <div>
+                                        <div class="fl">
+                                            <div class="peopleNum">成人</div>(10~99岁)<em>US$</em><em>93</em>
+                                        </div>
+                                        <div class="fr jsq" id="adder1">
+                                           <a href="javascript:;" class="ic-input-lessen">-</a>
+                                           <input type="text"  value="1" class="agetype" autocomplete="off" id="num_id" >
+                                           <a href="javascript:;" class="ic-input-add">+</a>
+                                        </div>
+                                    </div>
+                                     <div>
+                                        <div class="fl">
+                                            <div class="peopleNum">儿童</div>(3~9岁)<em>US$</em><em>11</em>
+                                        </div>
+                                        <div class="fr jsq" id="adder2">
+                                           <a href="javascript:;" class="ic-input-lessen">-</a>
+                                           <input type="text"  value="0" class="agetype" autocomplete="off" id="num_id" >
+                                           <a href="javascript:;" class="ic-input-add">+</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="javascript:;" class="sure">确定</a>
+                                    
+                                </div>
+                            </div>
+						</li>
+						<li><a href="门票预定.html" class="once">立即订购</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="w1200 nav-list">
+			<div class="w1200 bar_tab">
+				<a href="#Product" class="current cpgy">产品概要</a>
+				<a href="#exchange" class="dhxx">兑换信息</a>
+				<a href="#Traffic_Map" class="jtdt">交通地图</a>
+				<a href="#Booking" class="ydxz">预定须知</a>
+				<a href="#costs" class="fysm">费用说明</a>
+				<a href="#traveler" class="lzdp">旅者点评</a>
+			</div>
+		</div>
+		
+		<div class="clearfix w1200 nav-border">
+			
+			<!--产品概要-->
+			<div id="Product">
+				<div class="visa-tit">产品概要</div>
+				<div class="appli-info">
+					<h4 class="appli-name"><i></i>产品特色</h4>
+					<p>☆【2016年圣诞环影特卖】年度最低折扣</p>
+					<p>☆门口买票需$115,超值免排队</p>
+					<p>☆2016哈利波特园盛大开园!魔法世界等你来join!</p>
+					<p>☆一窥著名电影制作幕后秘密</p>
+					<p>☆3D实景体验,让您惊声尖叫:亲身体验小黄人、辛普森、变形金刚、侏罗纪世界</p>
+				</div>
+				<div class="appli-info">
+					<h4 class="appli-name"><i></i>产品详情</h4>
+					<div class="product_list">
+						<h3>环影概况</h3>
+						<p>好莱坞环球影城成立于1915年,被誉为"洛杉矶的娱乐之都",是唯一一个集电影、电视拍摄片场为一体的主题公园,为观众展现了一个真实的电影制片厂.游客们除了可以体验惊心动魄的主题公园娱乐设施,精彩秀场以及真实的电影拍摄现场外,环球城市大道更是汇集了众多洛杉矶精品商店、餐厅和影院,这里可谓是好莱坞的缩影.这里每年都有超过百万的游客慕名而来,这是美国西部不可错过的景点!无尽可能 尽在环影!</p>
+						<h3>▼入园方式</h3>
+						<p class="bold">方式一:在活动当日携带确认的电子门票和有效身份件,前往环影大门左侧团体票窗口(Group Window)直接入园</p>
+						<p class="bold">方式二:将接收到的PDF电子票下载至您的智能手机,在环影入口闸机扫描二维码直接入园(QR码及条码必须清晰完整)</p>
+						<h3>▼环影系列精彩推荐</h3>
+						<p>好莱坞环球影城VIP贵宾门票</p>
+						<img src="images/pro.png" alt="" class="pro_img"/>
+						<h3>行程指南</h3>
+						<p>如果说去星光大道是膜拜美国电影业的辉煌历程,去比佛利山庄是领略好莱坞名流的风光生活,那么前往洛杉矶的环球影城,就是去体会电影制作拍摄的乐趣与真实.身在其中,您可以亲眼目睹神奇的飞跃时空、工厂大火、大地震等惊险镜头的拍摄及特殊效果区的大金刚、山洪爆发、十诫电影里摩西过红海、大白鲨、更可乘坐回到未来片中那部穿越时空车,穿越时间进入未来的时空去追捕坏人,除此之外还可以亲身经历未来水世界的惊险,真人水上追逐战表演及刺激的侏罗纪公园!</p>
+						<p>诺大的公园,短短一天的行程,如何最佳的利用时间?如何不错过最经典的项目?如何玩个过瘾?这些事前功课都要做足噢,下面就为大家介绍不容错过的热门项目</p>
+						<div>
+							<img src="images/room.png" alt="" class="recomm_img" />
+						</div>
+						<h3>▼新进项目:Despicable Me Minion Mayhem(神偷奶爸)</h3>
+						<p>随着《神偷奶爸》的全球热映,影城与2014年增加了"神偷奶爸"小黄人3D虚拟过山车.你可以和"史上最好心的大坏蛋"格鲁、格鲁收养的三个女儿(玛戈、伊迪丝和阿格蕾丝)以及人见人爱的超萌迷你小黄人展开一段新奇的冒险之旅,最后还有妙趣横生的小黄人互动舞会来结束这段欢乐的旅程.</p>
+						<h3>▼新进项目:Despicable Me Minion Mayhem(神偷奶爸)</h3>
+						<p>随着《神偷奶爸》的全球热映,影城与2014年增加了"神偷奶爸"小黄人3D虚拟过山车.你可以和"史上最好心的大坏蛋"格鲁、格鲁收养的三个女儿(玛戈、伊迪丝和阿格蕾丝)以及人见人爱的超萌迷你小黄人展开一段新奇的冒险之旅,最后还有妙趣横生的小黄人互动舞会来结束这段欢乐的旅程.</p>
+					</div>
+				</div>
+			</div>
+			<!--兑换信息-->
+			<div id="exchange" class="change">
+				<div class="visa-tit">兑换信息</div>
+				<h4>营业时间</h4>
+				<p>环球影城营业时间:每日9AM/10AM至6PM-8PM</p>
+				<h4>兑换地点</h4>
+				<p>100 Universal City PlazaUniversal City,California 91608</p>
+			</div>
+			<!--交通地图-->
+			<div id="Traffic_Map">
+				<div class="visa-tit">交通地图</div>
+				<div class="appli-info reserve-txt">
+					<!--地图-->
+					<img src="images/mapd.png" alt="" class="map"/>
+					<p>出门坐地铁 从X站到X站 步行5米 公交车601号 好莱坞站下车 100 Universal City PlazaUniversal City,Califor 91608</p>
+				</div>
+			</div>
+			<!--预定须知-->
+			<div id="Booking">
+				<div class="visa-tit">预定须知</div>
+				<div class="appli-info book_li">
+					<h4>订单确认</h4>
+					<p>订购成功后,您立刻会通过E-Mail收到[预订单],我们会在两个工作日内将最终确认的[电子旅行凭证]发到您的邮箱.我们的产品经理为您选择当地最可靠的供应商.确保您行程的最佳体验.</p>
+					<h4>凭证信息</h4>
+					<p>1、订购成功后,您订购后会发送电子门票.</p>
+					<p>2、请在活动当日携带手机/平板展示电子票完整QR码,或打印电子旅行凭证.</p>
+					<p>3、门票价格因浏览时间而不同,请订购时谨慎选择出发日期.不同价格的门票无法跨时段使用;淡季工作日门票无法在旺季工作日使用.旺季工作日门票无法在淡季工作日使用</p>
+					<h4>温馨提示</h4>
+					<p>-儿童门票适用于3-9岁,网络订购门票无身高限制</p>
+					<h4>更改取消</h4>
+					<p>-所有订购一经购买,不可更改或取消</p>
+				</div>
+			</div>
+			<!--费用说明-->
+			<div id="costs">
+				<div class="visa-tit">费用说明</div>
+				<div class="pr">
+					<h4>费用包含</h4>
+					<p>-环球影城一日门票</p>
+				</div>
+				<div class="pr">
+					<h4>费用不含</h4>
+					<p>-停车费用</p>
+					<p>-所有个人费用,如餐费、交通费等;</p>
+					<p>-个人健康旅游保险(如需购买,请查看保险)</p>
+				</div>
+			</div>
+			<!--旅者点评-->
+			<div id="traveler">
+				<div class="visa-tit">游客点评</div>
+				<ul>
+					<li class="leave">
+						<img src="images/image.png" alt="" class="fl"/>
+						
+						<div class="fl leave-msg">
+							<p>棒棒棒棒</p>
+							<div>
+								<span class="the_name">test01</span>
+								<i class="detail_icon detail_icon_time"></i>
+								<time>2015/12/11 12:00:24</time>
+							</div>
+							
+						</div>
+					</li>
+					
+				</ul>
+				<div class="stat">共有<span>0</span>访客发表了评论</div>
+				<div id="btn-msg" class="clearfix">
+					<textarea></textarea>
+					<div>
+						<label class="fl">
+							验证码:<input type="text" name="code" class="code" />
+							<a href="javascript:;">
+								<img src="images/none.png" alt="" class="code_img"/>看不清楚？
+							</a>
+						</label>
+						<input type="button" value="提交评论" class="fr btn-submit" />
+					</div>
+				</div>
+				<div class="page_indx">
+					<a href="#">《上一页</a>
+					<span>1</span>
+					<a href="#">下一页》</a>
+				</div>
+			</div>
+		</div>
+</section>
+<div class="white">
+<div class="footer w1200 clearfix overflow">
+	<div class="logo fl"><img src="images/logo.jpg" alt="天马旅游" /></div>
+    <div class="abouts fl">
+    	<dl class="clearfix"><dt>关于我们</dt><dd><a href="#">公司简介</a> <a href="#">联系我们</a> <a href="#">合作伙伴</a> <a href="#">商务合作</a></dd></dl>
+        <dl class="clearfix"><dt>网站条款</dt><dd><a href="#">法律声明</a> <a href="#">隐私政策</a> <a href="#">服务条款</a> <a href="#">低价保证</a></dd></dl>
+        <dl class="clearfix"><dt>友情链接</dt><dd><a href="#">友情链接1</a> <a href="#">友情链接2</a> <a href="#">友情链接3</a> <a href="#">友情链接4</a></dd></dl>
+    </div>
+    <div class="fr mt20"><img src="images/24tel.png" /></div>
+</div>
+</div>
+
+<div class="footer_bottom">
+	<div class="w1200 clearfix">
+    	<div class="social-share fr" data-sites="twitter,facebook,wechat,weibo"></div>
+    	<div class="tc" style="line-height:20px;">
+        	<p>Copyright ©2015-2017 版权所有 云林科技网络有限公司  京ICP备10011865号-1</p>  
+			<p>京公网安备11010502022735号 旅行社业务经营许可证号：X-XXX-XXXXXXX</p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="rightBar">
+	<div style="height:50px"></div>
+	<div class="personcenter hand">
+    	<a href="个人中心.html" rel="nofollow" >
+            <div class="del">
+                <div class="pos_r">
+                    <p>个人中心</p>
+                    <span></span>
+                </div>
+            </div>
+            <i class="barico-person"></i>
+        </a>
+	</div>
+	<div class="right-coll hand on">
+    	<a href="javascript:;">
+            <div class="del">
+                <div class="pos_r">
+                    <p>收藏</p>
+                    <span></span>
+                </div>
+            </div>
+            <i class="barico-coll"></i>
+        </a>
+	</div>
+    <div class="right-order hand">
+    	<a href="javascript:;">
+		<div class="del">
+        	<div class="pos_r">
+            	<p>查看订单</p>
+                <span></span>
+            </div>
+        </div>
+        <i class="barico-order"></i>
+        </a>
+	</div>
+	<div class="linkphone hand" href="javascript:;" rel="nofollow">
+		<div class="del" style="width:210px;">
+			<div class="pos_r">
+				<p>全球 7x24小时客服电话</p>
+				<p>400-008-8177（全球）</p>
+				<span></span> 
+			</div>
+		</div>
+		<i class="barico-tel"></i>
+	</div>
+	<div class="linkEmail hand" href="javascript:;" rel="nofollow">
+		<div class="del" style="width:210px;">
+			<div class="pos_r">
+				<p>电子邮箱</p>
+				<p>abc@abc.com</p>
+				<span></span> 
+			</div>
+		</div>
+		<i class="barico-email"></i>
+	</div>
+    <div class="linkadvisory hand" href="javascript:;" rel="nofollow">
+		<div class="del">
+			<div class="pos_r">
+				<p>在线咨询</p>
+				<span></span> 
+			</div>
+		</div>
+		<i class="barico-advisory"></i>
+	</div>
+    <div class="linksurvey hand" href="javascript:;" rel="nofollow">
+    	<a href="javascript:;">
+		<div class="del">
+			<div class="pos_r">
+				<p>问卷调查</p>
+				<span></span> 
+			</div>
+		</div>
+		<i class="barico-survey"></i>
+        </a>
+	</div>
+	<div class="rightBarBot hand">
+		<a class="linkTop" id="rightbar-linktop" href="javascript:;">
+			<div class="del">
+				<div class="pos_r">
+					<p>回到顶部</p>
+					<span></span>
+				</div>
+			</div>
+			<i class="barico-gotop"></i>
+		</a>
+	</div>
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/template.js"></script>
+<script src="js/common.js"></script> 
+<script src="js/tour_view.js"></script> 
+<script src="js/calendar.js"></script> 
+<script>
+	var top1 = $(".nav-list").offset().top;
+	var tabli = $(".bar_tab").find("a");
+	var nav = $(".nav-list");
+	var tabcon = [];
+	$(".detail-page>.w1200>div").each(function(){
+		if($(this).attr("id")){
+			tabcon.push($(this));
+		}
+	});
+	$(window).scroll(function(){
+		var win_top = $(this).scrollTop();
+		var topT =$(".nav-list").offset().top;
+		if(win_top>=topT){
+			$(".nav-list").removeClass("w1200").addClass("fixed");
+		}
+		if(win_top<top1){
+			$(".nav-list").removeClass("fixed").addClass("w1200");
+		}
+		for(var i=tabli.length-1;i>=0;i--){
+			if(tabcon[i].offset().top<$(window).scrollTop()+nav.outerHeight()+10){
+				
+					tabli.removeClass("current").eq(i).addClass("current");
+				break;
+			}
+		}
+	})
+	/*导航滑动*/
+	function hd(str){
+		str.click(function() {
+	    $("html, body").animate({
+	      scrollTop: $($(this).attr("href")).offset().top - $(".nav-list").outerHeight() + "px"
+	    }, {
+	      duration: 500,
+	      easing: "swing"
+	    });
+	    return false;
+	  });
+	}
+	hd($(".cpgy"));
+	hd($(".dhxx"));
+	hd($(".jtdt"));
+	hd($(".ydxz"));
+	hd($(".fysm"));
+	hd($(".lzdp"));
+	$(".bar_tab a").on("click",function(){
+		$(this).addClass("current");
+		$(this).siblings().removeClass("current");
+	})
+	
+	saas.calendar({
+	autoRender: false,
+	trigger: '.J_calendar',
+	triggerEvent: 'click',
+	bimonthly: true,
+	template: 'small',
+	cascading: true,
+	showNumberOfDays: true,
+	cascadingMax: 20,
+	monthNext: 6,
+	zIndex: 21
+	})
+	$(".classify_nav li").on({
+		mouseover:function(){
+			$(this).children(".menu-box").show();
+		},
+		mouseout:function(){
+			$(this).children(".menu-box").hide();
+		}
+	})
+</script>
+</body>
+</html>
